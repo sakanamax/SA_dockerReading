@@ -16,6 +16,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 * books/ - 跟書有關的檔案
 * books/docbook-master - 書中的範例
+* books/讀書心得 - 可以將各章節讀書心得共同編輯
 * mindmap/ - 心智圖存放
 
 
