@@ -1,0 +1,22 @@
+{
+"builders": [
+  {
+    "type": "docker",
+    "image": "ubuntu:14.04",
+    "commit": "true"
+  }
+],
+"provisioners": [
+  {
+    "type": "shell",
+    "script": "bootstrap.sh"
+  }
+],
+"post-processors": [
+   {
+     "type": "docker-tag",
+     "repository": "how2dock/packer",
+     "tag": "latest"
+   }
+]
+}
