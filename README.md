@@ -33,12 +33,12 @@ Fist online Meet up 2016/4/11
 
 * 使用 Google hangout
 * 分享視窗的方式討論(webpage, 終端機) + 語音 + google doc
-* 主要放在 Chapter 1 - Chapter 5
+* 主要放在 Chapter 1 - Chapter 5, Chatper 6 之後可以討論各自的案例分享
 * Cluster 的部份採用 Docker swarm
 * 考慮網路的關係, docker 版本可能用 1.10.x
 * 第一次讀書會是 2016/4/25 21:30, 時間為一個小時
 * 建立 Dockerfile 資料夾分享彼此的 Dockerfile
-** 使用功能分類（by folder）
+ * 使用功能分類（by folder）
 
 -------------------------------------------------
 
