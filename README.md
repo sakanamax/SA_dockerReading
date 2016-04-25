@@ -50,4 +50,16 @@ Fist online Meet up 2016/4/11
 
 -------------------------------------------------
 
+2016/4/25
+
+進度: Chapter 1 - Chapter 1.13
+
+讀書心得討論 https://github.com/sakanamax/SA_dockerReading/blob/master/books/%E8%AE%80%E6%9B%B8%E5%BF%83%E5%BE%97/ch1.txt
+
+下次讀書會 2016/5/9 21:30
+
+從 1.14 開始
+
+-------------------------------------------------
+
 
