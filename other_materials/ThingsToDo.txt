@@ -1,0 +1,5 @@
+# 將一些可能可以以後實作的 link / project 收集
+docker storage 換成overlay
+* https://developerblog.redhat.com/2014/09/30/overview-storage-scalability-docker/
+* https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/
+
