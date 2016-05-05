@@ -6,3 +6,5 @@
 
 * [Test Docker File](https://github.com/zuazo/dockerspec)
 
+* [Dockerized components of the Dynatrace Application Monitoring enterprise solution](https://github.com/Dynatrace/Dynatrace-Docker)
+
