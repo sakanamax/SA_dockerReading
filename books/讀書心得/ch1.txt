@@ -39,16 +39,23 @@ docker create / start / restart 想法 ？
 1.15 Using Supervisor to Run WordPress in a Single Container
 
 Supervisor - run multiple processes in a container.
+---- 實務上拿 supervisor 來當 systemd or systemV 來控管服務開機是否啟動
 
 討論：
 
 COPY 是從本機? 可否從其他路徑?
+---- 可以使用現行目錄或是絕對路徑
+ADD 可以允許 URL
+---- ADD http://example.com/big.tar.gz /usr/src/things
+所以 local 檔案用 COPY, URL 用 ADD
+跟 RUN wget 差異為?
+
 
 1.16 Running a WorkdPress Blog Using Two Linked Containers
 
 --link 選項
 
--e 選項
+-e 選項 環境變數
 
 1.17 Backing Up a Database Running in a Container
 
@@ -57,6 +64,7 @@ COPY 是從本機? 可否從其他路徑?
 討論:
 
 如何mysqldump 到 container?
+---- 使用 sh -c 來處理 docker exec containerName sh -c "mysqldump xxxxxxxxxxxxxxxx > /tmp/xxxx.sql"
 
 1.18 Sharing Data in Your Docker Host with Containers
 
@@ -74,7 +82,11 @@ docker 掛載到 /var/lib/docker/volumes
 
 --volumes-from 後面可以接 container name or id
 
+
 討論:
 
 如何清除 volume ?
+---- docker volume rm $(docker volume ls -qf dangling=true)
+------ dangling ?
+
 /var/lib/docker/vfs ??
