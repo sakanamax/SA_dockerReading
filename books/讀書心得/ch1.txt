@@ -26,6 +26,45 @@ for (( i=8000 ; i < 8015 ; i=i+1 ))
 討論: 
 docker exec
 
+1.14 Buidling a Docker Image with a Dockerfile
+
+1.15 Using Supervisor to Run WordPress in a Single Container
+
+Supervisor - run multiple processes in a container.
+
+討論：
+
+COPY 是從本機? 可否從其他路徑?
+
+1.16 Running a WorkdPress Blog Using Two Linked Containers
+
+--link 選項
+
+-e 選項
+
+1.17 Backing Up a Database Running in a Container
+
+-v 掛載 volume  本地目錄:container目錄
+
+討論:
+
+如何mysqldump 到 container?
+
+1.18 Sharing Data in Your Docker Host with Containers
+
+-v 掛載 volume  本地目錄:container目錄:權限
+
+討論:
+
+docker inspect  -f  {{.Mounts}}  containerID
+* -f {{.Mounts}} ?
+* [{ /root/SA_dockerReading /cookbook  ro false}]  true or false ?
+
+1.19 Sharing Data Between Containers
+
+
+
+
 1.13 Creating, Starting, Stopping, and Removing Containers
 
 討論: 
