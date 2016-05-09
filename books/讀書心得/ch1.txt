@@ -72,9 +72,9 @@ docker inspect  -f  {{.Mounts}}  containerID
 
 docker 掛載到 /var/lib/docker/volumes
 
-
+--volumes-from 後面可以接 container name or id
 
 討論:
 
 如何清除 volume ?
-
+/var/lib/docker/vfs ??
