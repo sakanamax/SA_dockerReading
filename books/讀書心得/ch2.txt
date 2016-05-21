@@ -24,4 +24,9 @@ The two methods are similar; the difference is that saving an image will keep it
 
 2.3 Writing Your First Dockerfile
 
+FROM
+ENTRYPOINT
+CMD
+
+https://github.com/CentOS/CentOS-Dockerfiles
 
