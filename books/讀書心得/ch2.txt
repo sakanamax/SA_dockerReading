@@ -1,0 +1,27 @@
+2.1 Keeping Changes Made a Container by Committing to an Image
+
+docker  commit  CONTAINERID  REPO:TAG
+
+docker  diff  CONTAINERID
+
+2.2 Saving Images and Containers as Tar Files for Sharing
+
+docker export CONTAINERID  >  NAME.tar
+
+docker import  NAME.tar  REPO:TAG
+
+docker save  -o update1.tar update
+
+docker load -i update1.tar
+
+跟 docker import 方式不同的是 
+
+ docker load 會遵循之前 image 的 repo與tag 
+
+ 但是 docker import 則可以自訂 repo:tag
+
+The two methods are similar; the difference is that saving an image will keep its history, and exporting a container will squash its history.
+
+2.3 Writing Your First Dockerfile
+
+

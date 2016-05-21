@@ -90,3 +90,7 @@ docker 掛載到 /var/lib/docker/volumes
 ------ dangling ?
 
 /var/lib/docker/vfs ??
+
+1.20 Copying Data and from Containers
+
+docker 1.9 以上支援 host 複製檔案到 container
