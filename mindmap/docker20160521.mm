@@ -25,7 +25,7 @@
 </node>
 <node CREATED="1463666470813" ID="ID_394154834" MODIFIED="1463666473131" POSITION="right" TEXT="&#x6307;&#x4ee4;">
 <node CREATED="1463666553279" ID="ID_319733372" MODIFIED="1463666556975" TEXT="docker">
-<node CREATED="1463666566191" ID="ID_1580940218" MODIFIED="1463666583491" TEXT="images">
+<node CREATED="1463666566191" FOLDED="true" ID="ID_1580940218" MODIFIED="1463819086529" TEXT="images">
 <node CREATED="1463666669137" ID="ID_1839245636" MODIFIED="1463666914033">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -57,7 +57,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463666782599" ID="ID_1003069908" MODIFIED="1463666783841" TEXT="run">
+<node CREATED="1463666782599" FOLDED="true" ID="ID_1003069908" MODIFIED="1463819084642" TEXT="run">
 <node CREATED="1463666820702" ID="ID_889446745" MODIFIED="1463666892692">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -177,7 +177,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1463667534111" ID="ID_782542259" MODIFIED="1463667537668" TEXT="attach">
+<node CREATED="1463667534111" FOLDED="true" ID="ID_782542259" MODIFIED="1463819080919" TEXT="attach">
 <node CREATED="1463667538857" ID="ID_442513265" MODIFIED="1463667665387">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -195,7 +195,7 @@
 </node>
 <node CREATED="1463667667584" ID="ID_867311495" MODIFIED="1463667683084" TEXT="#docker  attach  CONTAINERID"/>
 </node>
-<node CREATED="1463667720180" ID="ID_1117036617" MODIFIED="1463667721927" TEXT="ps">
+<node CREATED="1463667720180" FOLDED="true" ID="ID_1117036617" MODIFIED="1463819079897" TEXT="ps">
 <node CREATED="1463667724610" ID="ID_47086939" MODIFIED="1463667755313">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -253,10 +253,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1463668163196" ID="ID_497200439" MODIFIED="1463668165291" TEXT="start">
+<node CREATED="1463668163196" FOLDED="true" ID="ID_497200439" MODIFIED="1463819083257" TEXT="start">
 <node CREATED="1463668166356" ID="ID_1568891632" MODIFIED="1463668189233" TEXT="&#x555f;&#x52d5;&#x505c;&#x6b62;&#x7684;container"/>
 </node>
-<node CREATED="1463668913403" ID="ID_1717368841" MODIFIED="1463668915001" TEXT="stop">
+<node CREATED="1463668913403" FOLDED="true" ID="ID_1717368841" MODIFIED="1463819077028" TEXT="stop">
 <node CREATED="1463668916611" ID="ID_1545502455" MODIFIED="1463668922779" TEXT="&#x505c;&#x6b62; container"/>
 <node CREATED="1463668945685" ID="ID_1291678251" MODIFIED="1463668975763">
 <richcontent TYPE="NODE"><html>
@@ -277,7 +277,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463668352089" ID="ID_1411585655" MODIFIED="1463668355510" TEXT="inspect">
+<node CREATED="1463668352089" FOLDED="true" ID="ID_1411585655" MODIFIED="1463819075966" TEXT="inspect">
 <node CREATED="1463668359576" ID="ID_1523845279" MODIFIED="1463668405150">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -309,7 +309,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463669017903" ID="ID_1753849682" MODIFIED="1463669019939" TEXT="rm">
+<node CREATED="1463669017903" ID="ID_1753849682" MODIFIED="1463821153220" TEXT="rm">
 <node CREATED="1463669024500" ID="ID_1894269750" MODIFIED="1463669033171" TEXT="Remove one or more containers"/>
 <node CREATED="1463668945685" ID="ID_1905448334" MODIFIED="1463669221431">
 <richcontent TYPE="NODE"><html>
@@ -337,7 +337,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1463669230056" ID="ID_370808722" MODIFIED="1463669231525" TEXT="rmi">
+<node CREATED="1463669230056" FOLDED="true" ID="ID_370808722" MODIFIED="1463821152179" TEXT="rmi">
 <node CREATED="1463669233073" ID="ID_810955020" MODIFIED="1463669288889">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -355,7 +355,7 @@
 </node>
 <node CREATED="1463669290187" ID="ID_850576706" MODIFIED="1463669298928" TEXT="#docker  rmi  IMAGEID"/>
 </node>
-<node CREATED="1463815825467" ID="ID_684765739" MODIFIED="1463815826377" TEXT="cp">
+<node CREATED="1463815825467" FOLDED="true" ID="ID_684765739" MODIFIED="1463821149128" TEXT="cp">
 <node CREATED="1463815827435" ID="ID_1080340405" MODIFIED="1463815893978">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -407,7 +407,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463816056689" ID="ID_473884324" MODIFIED="1463816058111" TEXT="exec">
+<node CREATED="1463816056689" FOLDED="true" ID="ID_473884324" MODIFIED="1463821145870" TEXT="exec">
 <node CREATED="1463816058959" ID="ID_1503723515" MODIFIED="1463816090920">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -428,7 +428,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463816621892" ID="ID_1667485104" MODIFIED="1463816625347" TEXT="commit">
+<node CREATED="1463816621892" FOLDED="true" ID="ID_1667485104" MODIFIED="1463821143518" TEXT="commit">
 <node CREATED="1463816636170" ID="ID_1246829830" MODIFIED="1463816674752">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -449,7 +449,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463816831908" ID="ID_1430868244" MODIFIED="1463816833336" TEXT="diff">
+<node CREATED="1463816831908" FOLDED="true" ID="ID_1430868244" MODIFIED="1463819090100" TEXT="diff">
 <node CREATED="1463816834142" ID="ID_678244918" MODIFIED="1463816868853">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -511,7 +511,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1463817126162" ID="ID_1533681106" MODIFIED="1463817134267" TEXT="export">
+<node CREATED="1463817126162" FOLDED="true" ID="ID_1533681106" MODIFIED="1463819091145" TEXT="export">
 <node CREATED="1463817140115" ID="ID_1773253534" MODIFIED="1463818474995">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -545,7 +545,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463817538130" ID="ID_1277557007" MODIFIED="1463817539888" TEXT="import">
+<node CREATED="1463817538130" FOLDED="true" ID="ID_1277557007" MODIFIED="1463819092295" TEXT="import">
 <node CREATED="1463817560381" ID="ID_386858091" MODIFIED="1463818446582">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -591,7 +591,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463818020523" ID="ID_384653447" MODIFIED="1463818023128" TEXT="save">
+<node CREATED="1463818020523" FOLDED="true" ID="ID_384653447" MODIFIED="1463819093845" TEXT="save">
 <node CREATED="1463818024226" ID="ID_155394641" MODIFIED="1463818498116">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -612,7 +612,7 @@
 </richcontent>
 </node>
 </node>
-<node CREATED="1463818380823" ID="ID_1742870292" MODIFIED="1463818383216" TEXT="load">
+<node CREATED="1463818380823" FOLDED="true" ID="ID_1742870292" MODIFIED="1463821137631" TEXT="load">
 <node CREATED="1463818384140" ID="ID_116282491" MODIFIED="1463818406618">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -674,6 +674,284 @@
 </richcontent>
 </node>
 </node>
+<node CREATED="1463820829150" ID="ID_910857" MODIFIED="1463820850943" TEXT="build">
+<node CREATED="1463820852069" ID="ID_1868960845" MODIFIED="1463820907918">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Build an image from a Dockerfile
+    </p>
+    <p>
+      &#36879;&#36942; Dockerfile &#24314;&#31435; image
+    </p>
+    <p>
+      Usage: docker&#160;&#160;&#160;build&#160;&#160;&#160;[OPTIONS]&#160;&#160;&#160;&#160;PATH | URL | -
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463821155951" ID="ID_1401730751" MODIFIED="1463821158138" TEXT="options">
+<node CREATED="1463821159512" ID="ID_1668577522" MODIFIED="1463821162976" TEXT="-t">
+<node CREATED="1463821164091" ID="ID_1217892189" MODIFIED="1463821184136" TEXT="&#x6307;&#x5b9a; repo &#x540d;&#x7a31;&#x8207;tag"/>
+</node>
+</node>
+<node CREATED="1463821479551" ID="ID_321386383" MODIFIED="1463821500674" TEXT="#docker  build  -t  REPO:TAG  PATH"/>
+</node>
+</node>
+</node>
+<node CREATED="1463819239404" ID="ID_1158291693" MODIFIED="1463821649886" POSITION="right" TEXT="Dockerfile">
+<node CREATED="1463819279847" ID="ID_1246781972" MODIFIED="1463819402948">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#36879;&#36942;Dockerfile &#24314;&#31435; image
+    </p>
+    <p>
+      &#21487;&#20197; #man&#160;&#160;Dockerfile
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463819384888" FOLDED="true" ID="ID_1932388132" MODIFIED="1463821652504" TEXT="FORMAT">
+<node CREATED="1463819405469" ID="ID_1912529857" MODIFIED="1463819408424" TEXT="FROM">
+<node CREATED="1463819458491" ID="ID_1292124384" MODIFIED="1463819472601" TEXT="&#x5fc5;&#x9808;&#x662f; Dockerfile &#x7b2c;1&#x500b;"/>
+<node CREATED="1463819436873" ID="ID_601315900" MODIFIED="1463819443463" TEXT="FROM image">
+<node CREATED="1463819492818" ID="ID_1692540557" MODIFIED="1463819509173" TEXT="&#x5982;&#x679c;&#x6c92;&#x6709;&#x52a0;&#x4e0a; tag, &#x9810;&#x8a2d;&#x662f;latest"/>
+</node>
+<node CREATED="1463819445073" ID="ID_1369751637" MODIFIED="1463819451105" TEXT="FROM image:tag"/>
+<node CREATED="1463819530506" ID="ID_1644951782" MODIFIED="1463819552521">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      FROM&#160;&#160;image@digest
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1463819565747" ID="ID_1663237584" MODIFIED="1463819570382" TEXT="MAINTAINER">
+<node CREATED="1463819574449" ID="ID_985051537" MODIFIED="1463819583090" TEXT="&#x7dad;&#x8b77;&#x7684;&#x4f5c;&#x8005;"/>
+</node>
+<node CREATED="1463819601734" ID="ID_209859843" MODIFIED="1463819604524" TEXT="RUN">
+<node CREATED="1463819605804" ID="ID_977695762" MODIFIED="1463819654865">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#26377;&#20841;&#31278; form
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # the command is run in a shell - /bin/sh -c
+    </p>
+    <p>
+      RUN &lt;command&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # Executable form
+    </p>
+    <p>
+      RUN [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463819909118" ID="ID_1541723809" MODIFIED="1463819927476">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Do not confuse RUN with CMD. RUN runs a command and commits the result.
+    </p>
+    <p>
+      CMD executes nothing at build time, but specifies the intended command for the image.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1463819698544" ID="ID_733508631" MODIFIED="1463819700104" TEXT="CMD">
+<node CREATED="1463819701461" ID="ID_1805900855" MODIFIED="1463819756558">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#26377; 3 &#31278; forms
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # Executable form
+    </p>
+    <p>
+      CMD [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]`
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # Provide default arguments to ENTRYPOINT
+    </p>
+    <p>
+      CMD [&quot;param1&quot;, &quot;param2&quot;]`
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # the command is run in a shell - /bin/sh -c
+    </p>
+    <p>
+      CMD command param1 param2
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463819779832" ID="ID_415614929" MODIFIED="1463819781175" TEXT="There should be only one CMD in a Dockerfile. If more than one CMD is listed, only          the last CMD takes effect."/>
+<node CREATED="1463819799160" ID="ID_982171394" MODIFIED="1463819800218" TEXT="The main purpose of a CMD is to provide defaults for an executing container."/>
+</node>
+<node CREATED="1463819960716" ID="ID_554097027" MODIFIED="1463819963428" TEXT="EXPOSE">
+<node CREATED="1463819966606" ID="ID_173854815" MODIFIED="1463820034748">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The EXPOSE instruction informs Docker that the container listens on the&#160;specified network ports at runtime.
+    </p>
+    <p>
+      &#35373;&#23450; container &#38928;&#35373; listen port
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      EXPOSE &lt;port&gt; [&lt;port&gt;...]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1463820046000" ID="ID_1873177945" MODIFIED="1463820049138" TEXT="ENV">
+<node CREATED="1463820050222" ID="ID_546823977" MODIFIED="1463820095591">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The ENV instruction sets the environment variable &lt;key&gt; to &#160;the value &lt;value&gt;. This value is passed to all future &#160;RUN, ENTRYPOINT, and CMD instructions.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#35373;&#23450;&#35722;&#25976;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ENV &lt;key&gt; &lt;value&gt;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1463820153699" ID="ID_530543064" MODIFIED="1463820154994" TEXT="ADD">
+<node CREATED="1463820156923" ID="ID_1989048883" MODIFIED="1463820189960">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ADD has two forms:
+    </p>
+    <p>
+      ADD &lt;src&gt; &lt;dest&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # Required for paths with whitespace
+    </p>
+    <p>
+      ADD [&quot;&lt;src&gt;&quot;,... &quot;&lt;dest&gt;&quot;]
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1463820243712" ID="ID_62013051" MODIFIED="1463820266659" TEXT="The ADD instruction copies new files, directories or remote file URLs to the filesystem of the container at path &lt;dest&gt;."/>
+</node>
+</node>
+<node CREATED="1463820298509" ID="ID_830884939" MODIFIED="1463820302106" TEXT="ENTRYPOINT">
+<node CREATED="1463820303357" ID="ID_426761700" MODIFIED="1463820333740">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      ENTRYPOINT has two forms:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # executable form
+    </p>
+    <p>
+      ENTRYPOINT [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]`
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # run command in a shell - /bin/sh -c
+    </p>
+    <p>
+      ENTRYPOINT command param1 param2
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1463821653889" ID="ID_284510115" MODIFIED="1463821662058" TEXT="CentOS Dockerfiles">
+<node CREATED="1463821663657" ID="ID_1018695115" MODIFIED="1463821664944" TEXT="https://github.com/CentOS/CentOS-Dockerfiles"/>
 </node>
 </node>
 <node CREATED="1441234071173" ID="ID_731707892" MODIFIED="1441234088347" POSITION="left" TEXT="Document">
@@ -739,7 +1017,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1441655278833" FOLDED="true" ID="ID_1245184983" MODIFIED="1463666535361" TEXT="&#x5efa;&#x7acb; docker &#x6620;&#x50cf;&#x6a94;">
+<node CREATED="1441655278833" ID="ID_1245184983" MODIFIED="1463819218296" TEXT="&#x5efa;&#x7acb; docker &#x6620;&#x50cf;&#x6a94;">
 <node CREATED="1441655281016" FOLDED="true" ID="ID_930280541" MODIFIED="1441655498358">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -929,7 +1207,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1441655510238" ID="ID_468534482" MODIFIED="1441655511262" TEXT="&#x65b9;&#x5f0f; 2 &#x4f7f;&#x7528; Dockerfile &#x5efa;&#x7acb;&#x6620;&#x50cf;&#x6a94;">
+<node CREATED="1441655510238" FOLDED="true" ID="ID_468534482" MODIFIED="1463819222284" TEXT="&#x65b9;&#x5f0f; 2 &#x4f7f;&#x7528; Dockerfile &#x5efa;&#x7acb;&#x6620;&#x50cf;&#x6a94;">
 <node CREATED="1441655512156" ID="ID_550593995" MODIFIED="1441655563475">
 <richcontent TYPE="NODE"><html>
   <head>
