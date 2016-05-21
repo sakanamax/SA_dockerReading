@@ -32,3 +32,47 @@ https://github.com/CentOS/CentOS-Dockerfiles
 
 討論:
 * 如何一次刪除某個 repo下的所有 images?
+
+2.4 Packaging a Flask Application Inside a Container
+
+EXPOSE 5000
+CMD ["python", "/tmp/hello.py"]
+
+2.5 Optimizing Your Dockerfile by Following Best Practices
+
+2.6 Versioning an Image with Tags
+
+# docker tag  ubuntu:14.04 foobar:cookbook
+
+2.7 Migrating from Vagrant to Docker with the Docker Provider
+
+2.8 Using Packer to Create a Docker Image
+Packer
+https://www.packer.io/downloads.html
+
+有空可以試試看
+
+{
+"builders": [
+  {
+    "type": "docker",
+    "image": "ansible/ubuntu14.04-ansible:stable",
+    "commit": "true"
+  }
+],
+"provisioners": [
+  {
+    "type": "ansible-local",
+    "playbook_file": "local.yml"
+  }
+],
+"post-processors": [
+   {
+     "type": "docker-tag",
+     "repository": "how2dock/packer",
+     "tag": "ansible"
+   }
+]
+}
+
+
