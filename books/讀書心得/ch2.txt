@@ -30,3 +30,5 @@ CMD
 
 https://github.com/CentOS/CentOS-Dockerfiles
 
+討論:
+* 如何一次刪除某個 repo下的所有 images?
