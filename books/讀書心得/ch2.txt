@@ -75,4 +75,42 @@ https://www.packer.io/downloads.html
 ]
 }
 
+2.9 Publishing Your Image to Docker Hub
+
+docker login
+
+~/.docker/config.json
+
+2.10 Using ONBUILD Images
+
+討論:
+ONBUILD 用途?
+ONBUILD 的作用就是讓指令延遲執行，延遲到下一個使用 FROM 的 Dockerfile 在建置 image 時執行，只限延遲一次。ONBUILD 的使用情境在於建置時取得最新的源碼 (搭配 RUN) 與限定系統框架 ?
+
+2.11 Running a Private Registry
+
+可以參考
+https://philipzheng.gitbooks.io/docker_practice/content/repository/local_repo.html
+
+
+#docker pull registry:2
+
+# docker run -d -p 5000:5000 registry:2
+
+檢查方式
+# curl -i http://localhost:5000/v2/
+
+docker push 到私有倉庫 IP或NAME:PORT/REPO:TAG
+# docker push 127.0.0.1:5000/busy1:test2
+
+查詢私有倉庫 repo
+# curl -i http://localhost:5000/v2/_catalog
+
+查詢某個 repo 相關資訊, busy1 為 reponame, test2 為tag
+# curl -i http://localhost:5000/v2/busy1/manifests/test2
+
+列出某個 repo 的 tag
+# curl -i http://localhost:5000/v2/busy1/tags/list
+
+
 
