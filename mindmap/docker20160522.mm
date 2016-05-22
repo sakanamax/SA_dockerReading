@@ -25,6 +25,37 @@
 </node>
 <node CREATED="1463666470813" ID="ID_394154834" MODIFIED="1463666473131" POSITION="right" TEXT="&#x6307;&#x4ee4;">
 <node CREATED="1463666553279" ID="ID_319733372" MODIFIED="1463666556975" TEXT="docker">
+<node CREATED="1463897357320" FOLDED="true" ID="ID_1025088737" MODIFIED="1463899064965" TEXT="pull">
+<node CREATED="1463897360205" ID="ID_1204108780" MODIFIED="1463897401931">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Pull an image or a repository from a registry
+    </p>
+    <p>
+      Usage: docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Pull an image or a repository from a registry
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;-a, --all-tags=false&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Download all tagged images in the repository
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463899055991" ID="ID_287170454" MODIFIED="1463899062387" TEXT="#docker  pull  busybox"/>
+</node>
 <node CREATED="1463666566191" FOLDED="true" ID="ID_1580940218" MODIFIED="1463819086529" TEXT="images">
 <node CREATED="1463666669137" ID="ID_1839245636" MODIFIED="1463666914033">
 <richcontent TYPE="NODE"><html>
@@ -309,7 +340,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463669017903" ID="ID_1753849682" MODIFIED="1463821153220" TEXT="rm">
+<node CREATED="1463669017903" FOLDED="true" ID="ID_1753849682" MODIFIED="1463896352866" TEXT="rm">
 <node CREATED="1463669024500" ID="ID_1894269750" MODIFIED="1463669033171" TEXT="Remove one or more containers"/>
 <node CREATED="1463668945685" ID="ID_1905448334" MODIFIED="1463669221431">
 <richcontent TYPE="NODE"><html>
@@ -685,7 +716,7 @@
 </node>
 <node CREATED="1463821479551" ID="ID_321386383" MODIFIED="1463821500674" TEXT="#docker  build  -t  REPO:TAG  PATH"/>
 </node>
-<node CREATED="1463850609753" ID="ID_1342839337" MODIFIED="1463850611374" TEXT="tag">
+<node CREATED="1463850609753" FOLDED="true" ID="ID_1342839337" MODIFIED="1463896351336" TEXT="tag">
 <node CREATED="1463850613283" ID="ID_875247794" MODIFIED="1463850688513">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -699,8 +730,7 @@
       Usage: docker&#160;&#160;tag&#160;&#160;[OPTIONS]&#160;&#160;&#160;IMAGE[:TAG]&#160;&#160;&#160;[REGISTRYHOST/]&#160; [USERNAME/]NAME[:TAG]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1463850798534" ID="ID_1491971685" MODIFIED="1463850810127">
 <richcontent TYPE="NODE"><html>
@@ -710,6 +740,66 @@
   <body>
     <p>
       # docker&#160;&#160;tag&#160;&#160;ubuntu:14.04 foobar:cookbook
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1463896356801" FOLDED="true" ID="ID_976839653" MODIFIED="1463896686921" TEXT="login">
+<node CREATED="1463896374721" ID="ID_493418102" MODIFIED="1463896417875">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Register or log in to a Docker registry
+    </p>
+    <p>
+      Usage: docker&#160;&#160;login&#160;&#160;[OPTIONS]&#160;&#160;[SERVER]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Register or log in to a Docker registry.
+    </p>
+    <p>
+      If no server is specified &quot;https://index.docker.io/v1/&quot; is the default.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463896578221" ID="ID_846931920" MODIFIED="1463896618085">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#25104;&#21151;&#30331;&#20837;&#24460;&#30456;&#38364; token &#23384;&#25918;&#22312;
+    </p>
+    <p>
+      ~/.docker/config.json
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1463896718286" FOLDED="true" ID="ID_1539123523" MODIFIED="1463899066850" TEXT="search">
+<node CREATED="1463896720695" ID="ID_1895779681" MODIFIED="1463896757655">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Search the Docker Hub for images
+    </p>
+    <p>
+      Usage: docker search [OPTIONS] TERM
     </p>
   </body>
 </html>
@@ -1579,7 +1669,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1463850172336" ID="ID_564012236" MODIFIED="1463850218748" POSITION="left" TEXT="Optimizing your Dockerfile by following best practices">
+<node CREATED="1463850172336" FOLDED="true" ID="ID_564012236" MODIFIED="1463899105628" POSITION="left" TEXT="Optimizing your Dockerfile by following best practices">
 <node CREATED="1463850219865" ID="ID_166119856" MODIFIED="1463850231135" TEXT="Run a single process per container"/>
 <node CREATED="1463850231589" ID="ID_477785449" MODIFIED="1463850245033" TEXT="Do not assume that your container will live on.">
 <node CREATED="1463850318726" ID="ID_1631983191" MODIFIED="1463850349021" TEXT="You should not modify them but instead restart them from your base image"/>
@@ -1589,6 +1679,118 @@
 </node>
 <node CREATED="1463850352851" ID="ID_36738991" MODIFIED="1463850380239" TEXT="Use official images from Docker Hub instead of writing your own from scratch."/>
 <node CREATED="1463850381913" ID="ID_577528420" MODIFIED="1463850415873" TEXT="Minimize the number of layers of your images and take advantage of the image cache."/>
+</node>
+<node CREATED="1463899106849" ID="ID_928183846" MODIFIED="1463899130456" POSITION="left">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Private Registry
+    </p>
+    <p>
+      &#31169;&#26377;&#20489;&#24235;
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1463899152585" ID="ID_1188290666" MODIFIED="1463899165757">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#21487;&#20197;&#21443;&#32771;
+    </p>
+    <p>
+      https://philipzheng.gitbooks.io/docker_practice/content/repository/local_repo.html
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1463899169313" ID="ID_1348593719" MODIFIED="1463899176314" TEXT="&#x4f5c;&#x6cd5;&#x4e0a;&#x662f; v1"/>
+</node>
+<node CREATED="1463899142682" ID="ID_232660410" MODIFIED="1463899145527" TEXT="docker &#x65b9;&#x5f0f;">
+<node CREATED="1463899146609" ID="ID_1557038573" MODIFIED="1463899209286">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      #docker&#160;&#160;pull&#160;&#160;registry:2
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # docker&#160;&#160;&#160;run&#160;&#160;&#160;-d&#160;&#160;&#160;-p&#160;&#160;5000:5000&#160;&#160;&#160;registry:2
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463899219985" ID="ID_1379547706" MODIFIED="1463899223306" TEXT="&#x6aa2;&#x67e5;&#x65b9;&#x5f0f;">
+<node CREATED="1463899224394" ID="ID_1025498386" MODIFIED="1463899232202" TEXT="# curl -i http://localhost:5000/v2/"/>
+</node>
+<node CREATED="1463899236176" ID="ID_1634726080" MODIFIED="1463899243650" TEXT="docker push &#x5230;&#x79c1;&#x6709;&#x5009;&#x5eab;">
+<node CREATED="1463899244523" ID="ID_915216858" MODIFIED="1463899257814" TEXT="# docker push 127.0.0.1:5000/busy1:test2">
+<node CREATED="1463899259068" ID="ID_1622463424" MODIFIED="1463899267382" TEXT="IP&#x6216;NAME:PORT/REPO:TAG"/>
+</node>
+</node>
+<node CREATED="1463899272223" ID="ID_1005528928" MODIFIED="1463899274388" TEXT="&#x67e5;&#x8a62;">
+<node CREATED="1463899276605" ID="ID_1263570044" MODIFIED="1463899289700">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#26597;&#35426;&#31169;&#26377;&#20489;&#24235; repo
+    </p>
+    <p>
+      # curl -i http://localhost:5000/v2/_catalog
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463899331646" ID="ID_1434748181" MODIFIED="1463899336844">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#26597;&#35426;&#26576;&#20491; repo &#30456;&#38364;&#36039;&#35338;, busy1 &#28858; reponame, test2 &#28858;tag
+    </p>
+    <p>
+      # curl -i http://localhost:5000/v2/busy1/manifests/test2
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1463899342620" ID="ID_569035836" MODIFIED="1463899347332">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#21015;&#20986;&#26576;&#20491; repo &#30340; tag
+    </p>
+    <p>
+      # curl -i http://localhost:5000/v2/busy1/tags/list
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
