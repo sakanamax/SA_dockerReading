@@ -114,5 +114,7 @@ docker push 到私有倉庫 IP或NAME:PORT/REPO:TAG
 列出某個 repo 的 tag
 # curl -i http://localhost:5000/v2/busy1/tags/list
 
+2.12 Setting Up an Automated Build on Docker Hub for Continuous Integration/Deployment
+
 
 
