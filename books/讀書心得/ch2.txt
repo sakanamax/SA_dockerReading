@@ -46,6 +46,10 @@ CMD ["python", "/tmp/hello.py"]
 
 # docker tag  ubuntu:14.04 foobar:cookbook
 
+討論： Tag
+# docker tag -f 可以強制
+可以藉由 docker tag -f 切換不同 image id 連結
+
 2.7 Migrating from Vagrant to Docker with the Docker Provider
 
 2.8 Using Packer to Create a Docker Image
