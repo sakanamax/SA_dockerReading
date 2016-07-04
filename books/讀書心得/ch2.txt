@@ -116,5 +116,7 @@ docker push 到私有倉庫 IP或NAME:PORT/REPO:TAG
 
 2.12 Setting Up an Automated Build on Docker Hub for Continuous Integration/Deployment
 
+過程紀錄在 http://sakananote2.blogspot.tw/2016/07/docker-automated-build-with-github.html
+
 
 
