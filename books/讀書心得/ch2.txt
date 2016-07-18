@@ -122,5 +122,37 @@ docker push 到私有倉庫 IP或NAME:PORT/REPO:TAG
 
 過程紀錄在 http://sakananote2.blogspot.tw/2016/07/docker-automated-build-with-github.html
 
+2.13 Setting Up a Local Automated Build by Using a Git Hook and Private Registry
+
+post-commit 掛鉤在整個提交過程完成後運行 ( 參考 https://git-scm.com/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks )
+
+# git log -1 HEAD 會輸出最後一次的 HEAD
+commit 70e5df11ce73f99da5c1e970012d6416ce5254d0
+Author: Max Huang <sakana@cycu.org.tw>
+Date:   Mon Jul 4 22:55:39 2016 +0800
+
+    update 讀書會
+# git log -1 HEAD --format="%h" 會輸出
+70e5df1
+
+書上的作法
+create a bash script, ./git/hooks/post-commit, that contains something as simple as this:
+#!/bin/bash
+
+tag=`git log -1 HEAD --format="%h"`
+docker build -t flask:$tag /home/sebgoa/docbook/examples/flask
+
+感覺上就是用 HEAD 來當 tag
+-- /home/sebgoa/docbook/example/flask 裏面應該有 Dockerfile
+-- git commit 之後進行 docker build 然後以 git HEAD 來當 tag name
+
+討論:
+使用或是應用時機?
+
+
+2.14 Using Conduit for Continuous Deployment
+
+還沒機會實驗
+https://hub.docker.com/r/ehazlett/conduit/
 
 
