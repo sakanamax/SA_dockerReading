@@ -1,0 +1,6 @@
+3.1 Finding th IP Address of a Container
+
+Container 會把 IP 寫入 /etc/hosts
+可以透過 docker inspect CONTAINER_NAME 來看相關網路資訊
+-- 可以用 --format '{{ .NetworkSettings.IPAddress }}' 來直接取出
+-- 可以觀察 container 內的 /etc/hosts
