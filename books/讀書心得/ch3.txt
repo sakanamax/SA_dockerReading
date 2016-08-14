@@ -4,3 +4,26 @@ Container 會把 IP 寫入 /etc/hosts
 可以透過 docker inspect CONTAINER_NAME 來看相關網路資訊
 -- 可以用 --format '{{ .NetworkSettings.IPAddress }}' 來直接取出
 -- 可以觀察 container 內的 /etc/hosts
+
+3.2 Exposing a Container Port on the Host
+
+# 列出某個 contaoner 的 port mapping, 但是覺得用 docker ps 檢查比較快
+docker  port  CONTAINER
+
+* 觀察 port mapping
+---- 可以用 iptables -L 來觀察 docker 的 port mapping,省略一下原本有的 Chain, Docker 會建立 DOCKER Chain 來進行 port mapping 
+
+ # iptables -L 
+
+ Chain DOCKER (1 references) 
+
+ target     prot opt source               destination         
+
+ ACCEPT     tcp  --  anywhere             172.17.0.3           tcp dpt:ssh 
+
+---- docker 會建立 proxy 來執行 port maping, 可以用 ps -ef 來觀察 
+
+ # ps -ef | grep docker 
+ root      4129  1335  0 16:28 ?        00:00:00 docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 32768 -container-ip 172.17.0.3 -container-port 22
+
+
