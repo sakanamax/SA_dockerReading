@@ -1,0 +1,40 @@
+# Jupyterhub / Ansible on openSUSE Leap 42.2
+FROM opensuse:42.2
+# Author
+MAINTAINER Max Huang <sakana@cycu.org.tw>
+
+# Install Python and pre-requisite packages
+RUN \
+  zypper -n  install \
+   python3 \
+   python3-pip \
+   python3-paramiko \
+   python3-matplotlib \
+   python3-numpy \
+   wget \
+   npm4 \
+   unzip
+
+# run npm configurable-http-proxy
+RUN npm install -g configurable-http-proxy
+
+# Install Jupyterhub
+RUN pip3  install --upgrade pip
+RUN pip3  install  jupyter jupyterhub
+
+# Install Ansible
+RUN zypper -n install ansible
+
+#expose ports
+EXPOSE 8000
+
+# create user
+RUN useradd -m ansible && echo "ansible:2016StudyArea"|chpasswd
+
+# Get playbook
+RUN wget https://github.com/sakanamax/LearnJupyter/archive/master.zip -O /home/ansible/master.zip 
+RUN su - ansible -c "unzip master.zip"
+
+
+# Define default command.
+CMD ["jupyterhub"]
