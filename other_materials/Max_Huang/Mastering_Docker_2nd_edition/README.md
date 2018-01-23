@@ -10,7 +10,7 @@ This is notes for Max reading
 
 * docker-compose 要另外安裝
 
-> * zypper install docker-compose
+	* `#zypper install docker-compose`
 
 * Docker-CE 以及 docker-EE 每季發行, docker-ce 的 edge 版本每月發行, 可參考 https://docs.docker.com/engine/installation/#time-based-release-schedule 原則上 3, 6, 9, 12月就是穩定版本, 然後 docker-ce 版本會維持 4個月, 好讓使用者可以切換版本.
 
