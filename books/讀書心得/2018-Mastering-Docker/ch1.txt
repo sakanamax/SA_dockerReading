@@ -1,0 +1,8 @@
+* 指令: docker version / docker-compose version / docker help / docker container run hello-world / docker image pull nginx / docker container run -d --name nginx-test -p 8080:80 nginx / docker container stop nginx-test / docker container rm nginx-test / 
+
+* docker-compose 要另外安裝
+
+ * # zypper install docker-compose
+
+* Docker-CE 以及 docker-EE 每季發行, docker-ce 的 edge 版本每月發行, 可參考 https://docs.docker.com/engine/installation/#time-based-release-schedule 原則上 3, 6, 9, 12月就是穩定版本, 然後 docker-ce 版本會維持 4個月, 好讓使用者可以切換版本.
+

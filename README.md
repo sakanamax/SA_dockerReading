@@ -5,13 +5,15 @@ This is for SA docker Reading group
 * chat on slack
 * 檔案放 GitHub
 
+書 Mastering Docker - 2nd edition ( 2018年讀書會 )
+
+https://www.tenlong.com.tw/products/9781787280243
+
+
 書 Oreilly - docker cookbook ( 2017年讀書會 )
 
 http://techbus.safaribooksonline.com/book/software-engineering-and-development/9781491919705
 
-書 Mastering Docker - 2nd edition ( 2018年讀書會 )
-
-https://www.tenlong.com.tw/products/9781787280243
 
 心智圖軟體 freemind 下載
 http://freemind.sourceforge.net/wiki/index.php/Download
