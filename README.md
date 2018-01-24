@@ -42,6 +42,15 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/1/24
+
+* 進度: Chapter 1 ~ Chapter 1 結束
+* 讀書心得討論 https://github.com/sakanamax/SA_dockerReading/blob/master/books/%E8%AE%80%E6%9B%B8%E5%BF%83%E5%BE%97/2018-Mastering-Docker/ch1.txt
+* 下次讀書會 2018/2/7
+
+-------------------------------------------------
+
+
 Fist online Meet up 2018/1/10
 
 * 使用 Google hangout
