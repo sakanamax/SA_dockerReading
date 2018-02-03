@@ -2,6 +2,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/2/3
+
+進度: Chapter 2 ~ Chatper 2 結束
+
+* MAINTAINER 已經棄用, 放到 LABEL 內處理
+
+* ADD 相對於 COPY 可以上傳以及自動解壓縮 .tar.gz , 另外也可以從網路上下載, COPY 只能從本機
+
+* 指令: docker inspect -f '{{ .Config.Labels }}' nginx / docker image build / docker pull / docker commit /
+
+-------------------------------------
+
 2018/1/23
 
 進度: Chapter 1 ~ Chapter 1 結束
