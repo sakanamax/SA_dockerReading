@@ -42,6 +42,17 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/2/7
+
+* 進度 Chapter 2 ~ Chapter 2 p.40
+	* 確認大家都要 docker build 第2章的 docker file example image
+* 翔二的資料: https://github.com/sakanamax/SA_dockerReading/tree/master/other_materials/dearjack
+* sakana 補充: https://github.com/sakanamax/SA_dockerReading/tree/master/other_materials/Max_Huang/Mastering_Docker_2nd_edition
+* 下次讀書會 2018/2/21
+
+
+-------------------------------------------------
+
 2018/1/24
 
 * 進度: Chapter 1 ~ Chapter 1 結束
