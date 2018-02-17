@@ -2,6 +2,20 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/2/17
+
+進度: Chapter 3 ~
+
+* Auto Build 參考之前的文章 http://sakananote2.blogspot.tw/2016/07/docker-automated-build-with-github.html
+
+	* 複製練習檔案到自己的目錄, 方便練習 https://github.com/sakanamax/SA_dockerReading/tree/master/other_materials/Max_Huang/Mastering_Docker_2nd_edition/Chapter3_autobuild_exercise/dockerfile-example
+	* 感覺一個 github repo 只能 auto build 一個 dockerhub 上面的 autobuild ? 還是階層太多會失敗? 好像又可以了, 用books書中練習檔案? 原因不明
+	* Repository Links - 加入上游的 image repo, 如果上游的 repo 更新, 也會跟著更新 image
+
+* 
+
+-------------------------------------
+
 2018/2/3
 
 進度: Chapter 2 ~ Chatper 2 結束
