@@ -2,6 +2,24 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/2/19
+
+進度: Chapter 3 Docker Registry ~ Chapter 3 結束
+
+* Docker Registry
+	* https://docs.docker.com/registry/
+
+* Docker Trusted Registry
+	* https://docs.docker.com/datacenter/dtr/2.3/guides/
+
+* Quay https://quay.io/ 這個我沒有嘗試
+
+* MicroBadger https://microbadger.com/ 這個也沒有嘗試
+	* 用來觀察 dockerhub 上面的 metadata 很好用
+
+
+-------------------------------------
+
 2018/2/17
 
 進度: Chapter 3 ~ Chapter 3 Docker Store ( p73 )
