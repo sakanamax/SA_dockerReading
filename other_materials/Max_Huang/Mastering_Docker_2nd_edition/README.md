@@ -43,6 +43,8 @@ This is notes for Max reading
 
 * 指令: docker inspect -f '{{ .Config.Labels }}' nginx / docker image build / docker pull / docker commit /
 
+* Dockerfile 裡面的 ARG 可以在 docker build 的時候 使用 docker build --build-arg 的方式導入變數, 相對 ENV 有彈性多, 但是同時存在 ARG 與 ENV 時候, 看起來會以 ENV 為主
+
 -------------------------------------
 
 2018/1/23

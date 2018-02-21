@@ -42,6 +42,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2017/2/21
+
+* 進度 Chapter 2 p41 ~ Chapter 2 結束
+
+* 討論小記: Dockerfile 裡面的 ARG 可以在 docker build 的時候 使用 docker build --build-arg 的方式導入變數, 相對 ENV 有彈性多, 但是同時存在 ARG 與 ENV 時候, 看起來會以 ENV 為主
+
+* 下次讀書會 2018/3/7
+
+-------------------------------------------------
+
 2018/2/7
 
 * 進度 Chapter 2 ~ Chapter 2 p.40
