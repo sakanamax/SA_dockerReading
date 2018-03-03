@@ -2,6 +2,20 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/3/3
+
+進度: Chapter 4 Managing Containers ~ Chatper 4 p101 stats, 下次看 Resource limits
+
+* 指令 docker attach
+	* 使用 --sig-proxy=false 方式, 當按 Ctrl + C 的時候container不會終止
+
+* 指令 docker exec / docker logs / docker top / docker stats
+	* 自訂stat 輸出格式, table 可以顯示欄位名稱, 加上 tab 可以排列整齊 # docker  stats  --format  "table {{.Name}}\t {{.Container}}\t {{.CPUPerc}}\t {{.MemPerc}}\t {{.NetIO}}\t {{.BlockIO}}\t {{.PIDs}} "
+
+* 討論: docker logs --since 2018-03-03T15:00 好像沒有很準？
+
+-------------------------------------
+
 2018/2/19
 
 進度: Chapter 3 Docker Registry ~ Chapter 3 結束
