@@ -42,7 +42,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
-2017/2/21
+2018/2/21
 
 * 進度 Chapter 2 p41 ~ Chapter 2 結束
 
