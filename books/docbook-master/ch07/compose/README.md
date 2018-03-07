@@ -1,2 +1,0 @@
-Recipe for Docker compose
-====================================

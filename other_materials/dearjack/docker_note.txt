@@ -1,0 +1,38 @@
+Build container 可以限制CPU記憶體用量
+Dockerfile 每一個資料夾維持一個
+
+下載一個image
+docker image pull alpine:latest
+
+執行docker並進入docker 互動模式
+docker container run -it --name alpine-test alpine /bin/sh
+
+確認變更後的container
+docker container commit alpine-test local:broken-container
+
+將Docker image 存成檔案
+docker image save -o broken-container.tar local:broken-container
+
+Build 一個Docker image
+docker image build --tag local:fromscratch .
+
+執行docker並進入docker 互動模式
+docker container run -it --name alpine-test local:fromscratch /bin/sh
+
+顯示 Docker 環境變數
+docker image inspect <IMAGE_ID>
+
+Dockerfile環境變數設定語法有兩種
+1.一行只能一個環境變數
+  ENV <key> <value>
+  ENV username admin
+
+2.一行可以多個環境變數
+  ENV <key>=<value>
+  ENV username=admin
+
+利用Dockerfile安裝php 7 並使用8080port 開網頁啟動為deamon
+docker container run -d -p 8080:80 --name apache-php7 local/apache-php:7
+
+Dockerfile php 版本7改成5 就可以跑
+docker image build --tag local/apache-php:5 .

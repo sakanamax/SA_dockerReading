@@ -1,0 +1,158 @@
+2.1 Keeping Changes Made a Container by Committing to an Image
+
+docker  commit  CONTAINERID  REPO:TAG
+
+docker  diff  CONTAINERID
+
+2.2 Saving Images and Containers as Tar Files for Sharing
+
+docker export CONTAINERID  >  NAME.tar
+
+docker import  NAME.tar  REPO:TAG
+
+docker save  -o update1.tar update
+
+docker load -i update1.tar
+
+跟 docker import 方式不同的是 
+
+ docker load 會遵循之前 image 的 repo與tag 
+
+ 但是 docker import 則可以自訂 repo:tag
+
+The two methods are similar; the difference is that saving an image will keep its history, and exporting a container will squash its history.
+
+2.3 Writing Your First Dockerfile
+
+FROM
+ENTRYPOINT
+CMD
+
+https://github.com/CentOS/CentOS-Dockerfiles
+
+討論:
+* 如何一次刪除某個 repo下的所有 images?
+---- 暫時用 # docker images| grep  ubuntu | awk '{print $3}'
+---- 日後研究 filter
+
+2.4 Packaging a Flask Application Inside a Container
+
+EXPOSE 5000
+CMD ["python", "/tmp/hello.py"]
+
+2.5 Optimizing Your Dockerfile by Following Best Practices
+
+2.6 Versioning an Image with Tags
+
+# docker tag  ubuntu:14.04 foobar:cookbook
+
+討論： Tag
+# docker tag -f 可以強制
+可以藉由 docker tag -f 切換不同 image id 連結
+
+2.7 Migrating from Vagrant to Docker with the Docker Provider
+
+2.8 Using Packer to Create a Docker Image
+Packer
+https://www.packer.io/downloads.html
+
+有空可以試試看
+
+{
+"builders": [
+  {
+    "type": "docker",
+    "image": "ansible/ubuntu14.04-ansible:stable",
+    "commit": "true"
+  }
+],
+"provisioners": [
+  {
+    "type": "ansible-local",
+    "playbook_file": "local.yml"
+  }
+],
+"post-processors": [
+   {
+     "type": "docker-tag",
+     "repository": "how2dock/packer",
+     "tag": "ansible"
+   }
+]
+}
+
+2.9 Publishing Your Image to Docker Hub
+
+docker login
+
+~/.docker/config.json
+
+2.10 Using ONBUILD Images
+
+討論:
+ONBUILD 用途?
+ONBUILD 的作用就是讓指令延遲執行，延遲到下一個使用 FROM 的 Dockerfile 在建置 image 時執行，只限延遲一次。ONBUILD 的使用情境在於建置時取得最新的源碼 (搭配 RUN) 與限定系統框架 ?
+
+2.11 Running a Private Registry
+
+可以參考
+https://philipzheng.gitbooks.io/docker_practice/content/repository/local_repo.html
+
+
+#docker pull registry:2
+
+# docker run -d -p 5000:5000 registry:2
+
+檢查方式
+# curl -i http://localhost:5000/v2/
+
+docker push 到私有倉庫 IP或NAME:PORT/REPO:TAG
+# docker push 127.0.0.1:5000/busy1:test2
+
+查詢私有倉庫 repo
+# curl -i http://localhost:5000/v2/_catalog
+
+查詢某個 repo 相關資訊, busy1 為 reponame, test2 為tag
+# curl -i http://localhost:5000/v2/busy1/manifests/test2
+
+列出某個 repo 的 tag
+# curl -i http://localhost:5000/v2/busy1/tags/list
+
+2.12 Setting Up an Automated Build on Docker Hub for Continuous Integration/Deployment
+
+過程紀錄在 http://sakananote2.blogspot.tw/2016/07/docker-automated-build-with-github.html
+
+2.13 Setting Up a Local Automated Build by Using a Git Hook and Private Registry
+
+post-commit 掛鉤在整個提交過程完成後運行 ( 參考 https://git-scm.com/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks )
+
+# git log -1 HEAD 會輸出最後一次的 HEAD
+commit 70e5df11ce73f99da5c1e970012d6416ce5254d0
+Author: Max Huang <sakana@cycu.org.tw>
+Date:   Mon Jul 4 22:55:39 2016 +0800
+
+    update 讀書會
+# git log -1 HEAD --format="%h" 會輸出
+70e5df1
+
+書上的作法
+create a bash script, ./git/hooks/post-commit, that contains something as simple as this:
+#!/bin/bash
+
+tag=`git log -1 HEAD --format="%h"`
+docker build -t flask:$tag /home/sebgoa/docbook/examples/flask
+
+感覺上就是用 HEAD 來當 tag
+-- /home/sebgoa/docbook/example/flask 裏面應該有 Dockerfile
+-- git commit 之後進行 docker build 然後以 git HEAD 來當 tag name
+
+討論:
+使用或是應用時機?
+
+
+2.14 Using Conduit for Continuous Deployment
+
+還沒機會實驗
+https://hub.docker.com/r/ehazlett/conduit/
+
+

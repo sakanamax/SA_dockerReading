@@ -1,0 +1,27 @@
+# 用於註解
+# 後續的流程, 前面都要大寫
+# FROM 基於那個 image
+FROM opensuse:42.1
+# MAINTAINER 維護作者
+MAINTAINER Max Huang < sakana@study-area.org >
+# RUN 要執行的指令
+# 每一行就是一個 image layer, 儘量將同一種行為放同一行 使用 && 來連接
+
+# 安裝 java and wget, tar, vim
+RUN zypper -n install java-1.7.0-openjdk-devel wget tar vim
+
+# 設定工作目錄在 /root
+WORKDIR /root
+
+# 安裝及設定 scala
+RUN wget http://www.scala-lang.org/files/archive/scala-2.10.1.tgz && \
+    tar zxvf scala-2.10.1.tgz && \
+    mv scala-2.10.1 /usr/lib && \
+    ln  -s  /usr/lib/scala-2.10.1  /usr/lib/scala && \
+    touch /root/.bashrc && \
+    echo "export PATH=$PATH:/usr/lib/scala/bin" >> /root/.bashrc
+
+# 取得 Spark 2.0.2
+RUN wget http://archive.apache.org/dist/spark/spark-2.0.2/spark-2.0.2-bin-hadoop2.7.tgz && \
+    tar zxvf  spark-*.tgz && \
+    mv /root/spark*/  /root/spark

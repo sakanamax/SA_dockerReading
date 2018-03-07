@@ -1,0 +1,96 @@
+
+Notes:
+1.1 Installing Docker on Ubuntu 14.04
+1.2 Installing Docker on CentOS 6.5
+1.3 Installing Docker on CentOS 7
+* Docker 安裝透過 Ansible 可以參考 https://github.com/sakanamax/LearnAnsible/blob/master/playbook/general/docker_install.yml
+
+1.11 Running Hello World in Docker
+* 初步指令練習
+# docker images
+
+# docker run   --rm   -i   -t   opensuse    /bin/bash
+run 執行 docker
+--rm   Automatically remove the container when it exits
+-i   Keep STDIN open even if not attached
+-t  Allocate a pseudo-TTY
+
+1.12 Running a Docker Container in Detached Mode
+* 以背景的方式啟動 container, 使用 -d 選項來執行 container
+** 例如
+#!/bin/bash
+for (( i=8000 ; i < 8015 ; i=i+1 ))
+  do
+    sudo docker run -d -p $i:22 -t sakana/sshd
+  done
+討論: 
+docker exec
+
+
+1.13 Creating, Starting, Stopping, and Removing Containers
+
+討論: 
+-m 是 memory ?
+
+docker create / start / restart 想法 ？
+
+1.14 Buidling a Docker Image with a Dockerfile
+
+1.15 Using Supervisor to Run WordPress in a Single Container
+
+Supervisor - run multiple processes in a container.
+---- 實務上拿 supervisor 來當 systemd or systemV 來控管服務開機是否啟動
+
+討論：
+
+COPY 是從本機? 可否從其他路徑?
+---- 可以使用現行目錄或是絕對路徑
+ADD 可以允許 URL
+---- ADD http://example.com/big.tar.gz /usr/src/things
+所以 local 檔案用 COPY, URL 用 ADD
+跟 RUN wget 差異為?
+
+
+1.16 Running a WorkdPress Blog Using Two Linked Containers
+
+--link 選項
+
+-e 選項 環境變數
+
+1.17 Backing Up a Database Running in a Container
+
+-v 掛載 volume  本地目錄:container目錄
+
+討論:
+
+如何mysqldump 到 container?
+---- 使用 sh -c 來處理 docker exec containerName sh -c "mysqldump xxxxxxxxxxxxxxxx > /tmp/xxxx.sql"
+
+1.18 Sharing Data in Your Docker Host with Containers
+
+-v 掛載 volume  本地目錄:container目錄:權限
+
+討論:
+
+docker inspect  -f  {{.Mounts}}  containerID
+* -f {{.Mounts}} ?
+* [{ /root/SA_dockerReading /cookbook  ro false}]  true or false ?
+
+1.19 Sharing Data Between Containers
+
+docker 掛載到 /var/lib/docker/volumes
+
+--volumes-from 後面可以接 container name or id
+
+
+討論:
+
+如何清除 volume ?
+---- docker volume rm $(docker volume ls -qf dangling=true)
+------ dangling ?
+
+/var/lib/docker/vfs ??
+
+1.20 Copying Data and from Containers
+
+docker 1.9 以上支援 host 複製檔案到 container
