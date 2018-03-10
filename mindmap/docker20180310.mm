@@ -180,7 +180,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463666782599" ID="ID_1003069908" MODIFIED="1520670480162" TEXT="run">
+<node CREATED="1463666782599" FOLDED="true" ID="ID_1003069908" MODIFIED="1520687767791" TEXT="run">
 <node CREATED="1463666820702" ID="ID_889446745" MODIFIED="1463666892692">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -429,8 +429,7 @@
       &#38480;&#21046;&#35352;&#25014;&#39636;&#30340;&#29992;&#37327;, &#20294;&#26159;&#36996;&#26159;&#35201;&#32771;&#24942; --memory-swap &#30340;&#35373;&#23450;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -556,8 +555,39 @@
 <node CREATED="1463668163196" FOLDED="true" ID="ID_497200439" MODIFIED="1463819083257" TEXT="start">
 <node CREATED="1463668166356" ID="ID_1568891632" MODIFIED="1463668189233" TEXT="&#x555f;&#x52d5;&#x505c;&#x6b62;&#x7684;container"/>
 </node>
-<node CREATED="1463668913403" FOLDED="true" ID="ID_1717368841" MODIFIED="1463819077028" TEXT="stop">
+<node CREATED="1463668913403" FOLDED="true" ID="ID_1717368841" MODIFIED="1520688986300" TEXT="stop">
 <node CREATED="1463668916611" ID="ID_1545502455" MODIFIED="1463668922779" TEXT="&#x505c;&#x6b62; container"/>
+<node CREATED="1520688976750" ID="ID_1748596634" MODIFIED="1520688982018">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Usage: docker stop [OPTIONS] CONTAINER [CONTAINER...]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Stop one or more running containers
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Options:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--help&#160;&#160;&#160;&#160;&#160;&#160;&#160;Print usage
+    </p>
+    <p>
+      &#160;&#160;-t, --time int&#160;&#160;&#160;Seconds to wait for stop before killing it (default 10)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node CREATED="1463668945685" ID="ID_1291678251" MODIFIED="1463668975763">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -810,7 +840,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1463816056689" ID="ID_473884324" MODIFIED="1520671872849" TEXT="exec">
+<node CREATED="1463816056689" FOLDED="true" ID="ID_473884324" MODIFIED="1520687769931" TEXT="exec">
 <node CREATED="1463816058959" ID="ID_1503723515" MODIFIED="1520052288700">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1225,7 +1255,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1471163369143" FOLDED="true" ID="ID_417129769" MODIFIED="1479299990211" TEXT="port">
+<node CREATED="1471163369143" FOLDED="true" ID="ID_417129769" MODIFIED="1520689620560" TEXT="port">
 <node CREATED="1471163404889" ID="ID_235460608" MODIFIED="1471163411119">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1717,7 +1747,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1514642894407" FOLDED="true" ID="ID_1558784084" MODIFIED="1514643535169" TEXT="create">
+<node CREATED="1514642894407" FOLDED="true" ID="ID_1558784084" MODIFIED="1520689366915" TEXT="create">
 <node CREATED="1514642898199" ID="ID_1543996917" MODIFIED="1514642923642">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1743,7 +1773,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1514704665842" FOLDED="true" ID="ID_1053285309" MODIFIED="1520053419954" TEXT="network">
+<node CREATED="1514704665842" FOLDED="true" ID="ID_1053285309" MODIFIED="1520691912275" TEXT="network">
 <node CREATED="1514704669043" ID="ID_220268223" MODIFIED="1514704693881">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1762,7 +1792,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1514704701421" FOLDED="true" ID="ID_460818144" MODIFIED="1514706813526" TEXT="create">
+<node CREATED="1514704701421" FOLDED="true" ID="ID_460818144" MODIFIED="1520689992579" TEXT="create">
 <node CREATED="1514704730909" ID="ID_834034124" MODIFIED="1514706011021">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1832,7 +1862,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1514705139383" FOLDED="true" ID="ID_125607344" MODIFIED="1514706816306" TEXT="inspect">
+<node CREATED="1514705139383" FOLDED="true" ID="ID_125607344" MODIFIED="1520691911111" TEXT="inspect">
 <node CREATED="1514705142973" ID="ID_1038382110" MODIFIED="1514705148948">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -2023,6 +2053,180 @@
     </p>
   </body>
 </html></richcontent>
+</node>
+</node>
+<node CREATED="1520687777814" FOLDED="true" ID="ID_1625102761" MODIFIED="1520688719938" TEXT="update">
+<node CREATED="1520687784477" ID="ID_848446648" MODIFIED="1520687963509">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Usage: docker update [OPTIONS] CONTAINER [CONTAINER...]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Update configuration of one or more containers
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Options:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--blkio-weight uint16&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Block IO (relative weight), between 10 and 1000, or 0 to disable (default 0)
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpu-period int&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Limit CPU CFS (Completely Fair Scheduler) period
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpu-quota int&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Limit CPU CFS (Completely Fair Scheduler) quota
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpu-rt-period int&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Limit the CPU real-time period in microseconds
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpu-rt-runtime int&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Limit the CPU real-time runtime in microseconds
+    </p>
+    <p>
+      &#160;&#160;-c, --cpu-shares int&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CPU shares (relative weight)
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpus decimal&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Number of CPUs
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpuset-cpus string&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CPUs in which to allow execution (0-3, 0,1)
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--cpuset-mems string&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;MEMs in which to allow execution (0-3, 0,1)
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--help&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Print usage
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--kernel-memory bytes&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel memory limit
+    </p>
+    <p>
+      &#160;&#160;-m, --memory bytes&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Memory limit
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--memory-reservation bytes&#160;&#160;&#160;Memory soft limit
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--memory-swap bytes&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Swap limit equal to memory plus swap: '-1' to enable unlimited swap
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--restart string&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Restart policy to apply when a container exits
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#22914;&#26524;&#22312;&#22519;&#34892; docker run &#30340;&#26178;&#20505;&#26377;&#36914;&#34892;&#38480;&#21046;, &#21487;&#20197;&#20351;&#29992; docker update &#26356;&#26032;&#38480;&#21046;
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1520688785823" FOLDED="true" ID="ID_814107470" MODIFIED="1520688796859" TEXT="pause">
+<node CREATED="1520688788629" ID="ID_1495252928" MODIFIED="1520688794733">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Usage: docker pause CONTAINER [CONTAINER...]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Pause all processes within one or more containers
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Options:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--help&#160;&#160;&#160;Print usage
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1520688861774" FOLDED="true" ID="ID_1778888696" MODIFIED="1520688871034" TEXT="unpause">
+<node CREATED="1520688865158" ID="ID_137097067" MODIFIED="1520688869367">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Usage: docker unpause CONTAINER [CONTAINER...]
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Unpause all processes within one or more containers
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Options:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--help&#160;&#160;&#160;Print usage
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1520689648872" FOLDED="true" ID="ID_280678096" MODIFIED="1520689680542" TEXT="diff">
+<node CREATED="1520689651513" ID="ID_1733643905" MODIFIED="1520689678277">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Usage: docker diff CONTAINER
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Inspect changes to files or directories on a container's filesystem
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Options:
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;--help&#160;&#160;&#160;Print usage
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#21015;&#20986;&#33287;&#21407;&#20358;&#30340;image&#30340;&#24046;&#30064;
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>

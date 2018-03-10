@@ -4,11 +4,21 @@ This is notes for Max reading
 
 2018/3/10
 
-進度: Chatper 4 p101 memory limit, 下次 實驗 docker container update (p102)
+進度: Chatper 4 p101 memory limit ~ Chapter 4 p117, 下次看 p118 Docker volumes
 
-* 指令: docker run --cpu-shares  --memory
+* 指令: docker run --cpu-shares  --memory / docker update / docker pause / docker unpause / docker stop /docker restart
+
+* 指令: docker create / docker network /
 
 * 要找時間實驗 --memory-swap 方式
+
+* 建立網路之後會有 DNS 來負責解析同一個網路, 
+	* 用docker network inspect 查詢 # docker network inspect moby-counter -f"{{json .Containers}}"
+* IPAM ( IP Address management )
+
+* 討論: VPS 沒有swap, 可以用 fakeswap, 要找時間找台機器來測試( 家裡桌機太弱 ) / moby-counter2 不會 ping 到 redis, 跟書中不一樣, 可能是 bug已經修復? 看書的內容應該是 DNS 有 pass 出去
+
+* 討論: # docker run -d --name redis2 --network moby-counter2 --network-alias redis redis:alpine 可以讓不同的網路用同一個 DNS name??
 
 -------------------------------------
 
