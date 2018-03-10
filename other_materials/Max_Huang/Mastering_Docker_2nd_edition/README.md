@@ -2,6 +2,16 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/3/10
+
+進度: Chatper 4 p101 memory limit, 下次 實驗 docker container update (p102)
+
+* 指令: docker run --cpu-shares  --memory
+
+* 要找時間實驗 --memory-swap 方式
+
+-------------------------------------
+
 2018/3/3
 
 進度: Chapter 4 Managing Containers ~ Chatper 4 p101 stats, 下次看 Resource limits
