@@ -2,6 +2,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+進度: Chapter 4 p118 ~ Chapter 4 結束
+
+* 指令： docker volume
+
+* redis 的Dockerfile 內就有 VOLUME /data, 所以會在機器內建立 volume, 但是他的 mount point 顯示 /var/lib/docker/volumes/VOLUME_NAME/_data
+
+* docker rm 不會刪除 volume
+
+* # docker volume ls --format "table {{.Name}}\t{{.Driver}}\t{{.Scope}}\t{{.Mountpoint}}\t{{.Labels}}"
+
+-------------------------------------
+
 2018/3/10
 
 進度: Chatper 4 p101 memory limit ~ Chapter 4 p117, 下次看 p118 Docker volumes
