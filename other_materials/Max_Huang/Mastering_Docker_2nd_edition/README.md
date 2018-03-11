@@ -10,7 +10,7 @@ This is notes for Max reading
 
 * docker rm 不會刪除 volume
 
-* # docker volume ls --format "table {{.Name}}\t{{.Driver}}\t{{.Scope}}\t{{.Mountpoint}}\t{{.Labels}}"
+* 使用自訂格式 # docker volume ls --format "table {{.Name}}\t{{.Driver}}\t{{.Scope}}\t{{.Mountpoint}}\t{{.Labels}}"
 
 -------------------------------------
 
