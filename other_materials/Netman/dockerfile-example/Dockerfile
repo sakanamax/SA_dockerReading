@@ -1,1 +1,1 @@
-../Dockerfiles/scratch/Dockerfile_v1
+../Dockerfiles/scratch/Dockerfile_v2
