@@ -1,3 +1,3 @@
-FROM local:scratch_v1
-COPY files/3.txt /3.txt
+FROM local:scratch_v2
+COPY files/4.txt /4.txt
 CMD ["/bin/sh"]
