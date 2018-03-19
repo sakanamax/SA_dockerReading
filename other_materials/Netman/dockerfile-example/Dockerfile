@@ -1,4 +1,3 @@
-FROM scratch
-ADD files/alpine-minirootfs-3.6.1-x86_64.tar /
-COPY files/2.txt /2.txt
+FROM local:scratch_v1
+COPY files/3.txt /3.txt
 CMD ["/bin/sh"]
