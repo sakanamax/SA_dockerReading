@@ -42,6 +42,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/3/21
+
+* 進度: Chapter 3 p67
+
+* Layer and Docker ID 討論, 
+
+* 下次讀書會 2018/4/11
+
+-------------------------------------------------
+
 2018/3/7
 
 * 進度: Chapter 3 ~ Chapter 3 p67
