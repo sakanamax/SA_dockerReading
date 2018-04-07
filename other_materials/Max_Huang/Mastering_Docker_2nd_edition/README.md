@@ -4,7 +4,7 @@ This is notes for Max reading
 
 2018/4/7
 
-進度: Chapter 5 環境準備
+進度: Chapter 5 環境準備 ~ Chapter 5 p138, 下次看 More Docker netowrking
 
 * 安裝 docker-machine  https://docs.docker.com/machine/install-machine/
 
