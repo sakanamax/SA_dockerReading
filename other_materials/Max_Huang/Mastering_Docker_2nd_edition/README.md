@@ -2,6 +2,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/4/7
+
+進度: Chapter 5 環境準備
+
+* 安裝 docker-machine  https://docs.docker.com/machine/install-machine/
+
+* 測試 docker-machine with digital ocean http://sakananote2.blogspot.tw/2018/04/docker-machine-digital-ocean.html
+
+-------------------------------------
+
+2018/3/11
+
 進度: Chapter 4 p118 ~ Chapter 4 結束
 
 * 指令： docker volume
