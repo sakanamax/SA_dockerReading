@@ -42,6 +42,17 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/4/18
+
+* 進度: Chapter 3 67 ~ Chapter 3 p.99
+
+* docker register and docker attach / docker exec
+
+* 下次讀書會 2018/5/9
+
+
+-------------------------------------------------
+
 2018/3/21
 
 * 進度: Chapter 3 p67
