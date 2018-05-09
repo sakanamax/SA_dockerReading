@@ -42,6 +42,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/5/9
+
+* 進度: Chapter 3 p100 ~ Chapter 3 結束
+
+* 下次Chapter 4
+
+* 下次讀書會 2018/5/23
+
+-------------------------------------------------
+
 2018/4/18
 
 * 進度: Chapter 3 67 ~ Chapter 3 p.99
