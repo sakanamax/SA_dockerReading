@@ -1,0 +1,27 @@
+# openSUSE Leap 42.3 with sshd
+FROM opensuse:42.3
+
+# Author
+# MAINTAINER 已經棄用, 之後要使用 LABEL 方式
+LABEL maintainer="sakana@cycu.org.tw"
+
+# Install openssh-server and python
+RUN zypper -n install openssh python
+
+# Create SSH key
+RUN ssh-keygen -t rsa  -f /etc/ssh/ssh_host_rsa_key -N "" && \
+  ssh-keygen -t dsa  -f /etc/ssh/ssh_host_dsa_key -N "" && \
+  ssh-keygen -t ecdsa  -f /etc/ssh/ssh_host_ecdsa_key -N "" && \
+  ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key -N ""
+
+# Install passwd package
+
+
+# Modify root passwd
+RUN echo "root:openSUSE"|chpasswd
+
+#expose ports
+EXPOSE 22
+
+# Define default command.
+CMD ["/usr/sbin/sshd", "-D"]
