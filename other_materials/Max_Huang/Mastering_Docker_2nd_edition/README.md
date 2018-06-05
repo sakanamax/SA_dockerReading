@@ -2,6 +2,19 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/6/5
+
+進度：Chapter 6 ~ Chapter 6 結束
+
+* Weave Net 跳過, 直接看 Chapter 6
+
+* docker-compose 1.10 之後才支援 version 3
+
+* 討論: docker-compose.yml 格式寫法參考哪裡比較好?
+
+
+-------------------------------------
+
 2018/4/7
 
 進度: Chapter 5 環境準備 ~ Chapter 5 p138, 下次看 More Docker netowrking
