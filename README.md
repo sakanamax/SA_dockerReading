@@ -42,6 +42,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/6/6
+
+* 進度 Chapter 5 142 ~ Chapter 6 154
+
+* 下次 Chapter 6 155
+
+* 下次讀書會 
+
+-------------------------------------------------
+
 2018/5/28
 
 * 進度: Chapter 5 ~ Chapter 5 p141
