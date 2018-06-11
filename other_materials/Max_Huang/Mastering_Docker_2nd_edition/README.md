@@ -2,6 +2,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/6/11
+
+進度: Chapter 7 ~
+
+* docker swarm / docker node / docker service /docker stack
+
+-------------------------------------
+
 2018/6/5
 
 進度：Chapter 6 ~ Chapter 6 結束
