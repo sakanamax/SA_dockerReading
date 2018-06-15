@@ -2,9 +2,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/6/15
+
+進度: Chapter 8 ~ Chapter 8 p216
+
+*  portainer local and docker swarm in azure 實做
+
+
+-------------------------------------
+
 2018/6/11
 
-進度: Chapter 7 ~
+進度: Chapter 7 ~ Chapter 7 結束
 
 * docker swarm / docker node / docker service /docker stack
 
