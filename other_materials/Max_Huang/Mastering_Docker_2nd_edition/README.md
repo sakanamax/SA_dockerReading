@@ -2,6 +2,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/6/16
+
+進度: Chapter 8 217 ~ Chapter 8 結束
+
+*  portainer and DigitalOcean with port 2376 實做
+
+-------------------------------------
+
 2018/6/15
 
 進度: Chapter 8 ~ Chapter 8 p216
