@@ -42,6 +42,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/7/4
+
+* 進度: Chapter 7 ~ Chapter 7 結束
+
+* 下次 Chapter 8
+
+* 下次讀書會  2018/7/18
+
+-------------------------------------------------
+
 2018/6/20
 
 * 進度: Chapter 6 p155 ~ Chapter 6 結束
