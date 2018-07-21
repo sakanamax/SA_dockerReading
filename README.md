@@ -5,6 +5,10 @@ This is for SA docker Reading group
 * chat on slack
 * 檔案放 GitHub
 
+書 Kubernetes up and running ( 2018年讀書會 )
+
+https://www.tenlong.com.tw/products/9781491935675
+
 書 Mastering Docker - 2nd edition ( 2018年讀書會 )
 
 https://www.tenlong.com.tw/products/9781787280243
