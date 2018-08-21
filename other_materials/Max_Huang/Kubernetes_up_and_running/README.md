@@ -2,6 +2,17 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/8/21
+
+進度: Chapter 4 ~ Chapter 4結束
+
+* 設定公司 ~/.kube/config 以及相關指令
+
+* 練習 kubectl config 指令
+
+
+-------------------------------------
+
 2018/7/24
 
 進度: Chapter 2 ~ Chapter 3 結束
