@@ -50,8 +50,11 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 2018/9/26
 * 進度: 會前會
 
-* 讀書會會前會
+* 讀書會會前會, 雙周一次, 使用 Github, 預計用 play with k8s 或是 Docker for Mac 練習
 
+* 下次 Chapter 1
+
+* 下次讀書會　2018/10/17
 
 -------------------------------------------------
 
