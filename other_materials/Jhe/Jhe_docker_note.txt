@@ -1,0 +1,73 @@
+Managing Containers 筆記
+
+1.image
+	docker images 列出images
+	docker image rmi 刪除image(刪除時 由該image建立出的container要先刪除 或者加-f　強制刪除)
+	(也可以使用docker rmi)
+
+2.container
+	(1)docker container ls 	列出這在執行的container
+		（也可以使用docker ps 來查看）
+
+	   docker container ls -a	列出所有的container （包含未執行）
+	  	（也可以使用docker ps -a 來查看）
+
+
+
+	(2)docker container rm <container_name||container_id> 刪除container （container 必須要先關閉 或者加-f） (也可以使用docker rm <container_name||container_id>)
+
+
+	(3)docker container run -d --name nginx-test -p 8080:80 nginx
+		-d, --detach 分離至背景執行。沒加的話則是前景執行有stdin、stdout、stderr
+		--name 指定container名稱（不能重複）可以不指定
+		-p 將container port 接到host port (8080=host port;80=container port) host port不能重複
+
+	(4)docker attach container
+		attach 後的退出方式是：
+			1)ctrl+c :會整個process 一起關掉
+			2)attach時 加入--sig-proxy=false 參數 ，使用ctrl+c 退出， process 會在背景繼續執行(前提是在container run 時不能加-i -t)
+			3)run container 時加入-i(開啟互動模式) -t (tty模式), 在attach 後 使用<ctrl+p> + <ctrl+q>退出，process會在背景繼續執行
+			4)run container 時加入-i(開啟互動模式) -t (tty模式), 在attach 時 加入--detach-keys ctrl-$string 或--detach-keys $string 可以自行定義退出的key，process會在背景繼續執行
+
+	(5) docker container exec container <command>:
+		command : example 'ls -l /'
+		exec 是開啟第二個process 執行 <command>
+
+	(6) docker exec container -i -t /bin/bash
+		-i: interactive 互動模式
+		-t: open tty
+		持續在bash裡進行操作  直到下exit 離開bash
+
+3.container resource limits:
+	以docker container stats <container_name||container_id> 來查看資源限制或者attach||exec　進入查看	
+	
+	如果遇到'Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.'	
+	vim /etc/default/grub
+		GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+	refenerce:https://segmentfault.com/q/1010000002888521
+	
+	(1)對已經在執行的container　做資源限制
+		 docker container update　--cpu-shares 512 --memory 200M --memory-swap 210M <container_name||container_id>
+	(2)run container時做資源限制
+		docker container run -d -it --cpu-shares 100 --memory 50M alpine
+	(3) 測試memory limit的方法
+		docker container run -it --memory 100M opensuse /bin/bash
+			zypper install -y stress-ng
+			stress-ng --vm 1 --vm-bytes 150M
+*******************************************未測試成功**************************************************************************
+	(3)disk limits
+		在run container 時加入　--storage-opt　size=10M	(僅限dm zfs btrfs lcow xfs)
+　		refenerce:https://forums.docker.com/t/storage-quota-per-container-overlay2-backed-by-xfs/37653
+********************************************************************************************************************************
+
+network
+https://github.com/russmckendrick/docker/tree/master/moby-counter
+
+	
+docker system prune 清除cache
+
+
+docker swarm join-token worker 如果忘記join token  這個指令可以查到
+docker service create --name cluster --constraint "node.role==worker" -p 80:80/tcp russmckendrick/cluster
+  "node.role!=manager"是一樣的關係
+
