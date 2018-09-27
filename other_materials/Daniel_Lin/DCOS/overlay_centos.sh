@@ -43,6 +43,7 @@ EOF
 fi
 
 sleep 2
+
 #####
 # Enable Overlay module
 #####
@@ -59,6 +60,7 @@ else
 fi
 
 sleep 2
+
 #####
 # Setting Disk and mount
 ####
@@ -106,6 +108,7 @@ else
 fi
 
 sleep 2
+
 #####
 # Setting Docker Engine
 ####
