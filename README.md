@@ -47,6 +47,22 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/10/17
+
+* 進度: Chapter 1 ~ Chapter 1 結束
+
+* Play with K8S 參考 http://sakananote2.blogspot.com/2018/10/play-with-kubernetes.html
+
+* Daniel 介紹 Terraform https://www.terraform.io/intro/index.html
+
+* helm https://github.com/helm/helm
+
+* 下次 Chapter 2
+
+* 下次讀書會 2018/10/31
+
+-------------------------------------------------
+
 2018/9/26
 * 進度: 會前會
 
