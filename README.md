@@ -47,6 +47,20 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/10/31
+
+* 進度 Chapter 2 ~ Chapter 2 結束
+
+* 下次請各位都要有可以執行 kubectl 的環境, docker for Mac edge / Play with K8s / AKS ...
+
+* 可能的話了解一下 API 也不錯, 這裡有免費課程 https://www.codecademy.com/apis
+
+* 下次 Chpater 3
+
+* 下次讀書會 2018/11/14
+
+-------------------------------------------------
+
 2018/10/17
 
 * 進度: Chapter 1 ~ Chapter 1 結束
