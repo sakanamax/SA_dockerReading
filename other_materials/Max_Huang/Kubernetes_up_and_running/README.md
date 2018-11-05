@@ -2,6 +2,16 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/11/5
+
+進度: 處理 Dropbox 路徑移動 with NCHC workstation, k8s不自賞
+
+* Day 6 - https://ithelp.ithome.com.tw/articles/10193489
+
+
+
+-------------------------------------
+
 2018/8/21
 
 進度: Chapter 4 ~ Chapter 4結束
