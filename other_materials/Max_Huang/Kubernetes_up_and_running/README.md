@@ -1,5 +1,18 @@
 This is notes for Max reading
 
+* 書中附檔 https://github.com/kubernetes-up-and-running/examples
+
+
+-------------------------------------
+
+2018/12/16
+
+進度: Chapter 5 ~
+
+* 書中附檔 https://github.com/kubernetes-up-and-running/examples 新增到 books/書中附檔/kubernetes-up-and-running
+
+* 
+
 -------------------------------------
 
 2018/11/5
@@ -7,7 +20,6 @@ This is notes for Max reading
 進度: 處理 Dropbox 路徑移動 with NCHC workstation, k8s不自賞
 
 * Day 6 - https://ithelp.ithome.com.tw/articles/10193489
-
 
 
 -------------------------------------
