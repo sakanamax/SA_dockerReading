@@ -7,11 +7,10 @@ This is notes for Max reading
 
 2018/12/16
 
-進度: Chapter 5 ~
+進度: Chapter 5 ~ Chapter 5 p.50
 
 * 書中附檔 https://github.com/kubernetes-up-and-running/examples 新增到 books/書中附檔/kubernetes-up-and-running
 
-* 
 
 -------------------------------------
 
