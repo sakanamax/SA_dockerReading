@@ -5,6 +5,17 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/12/18
+
+進度： Chapter 5 p.51 ~ Chapter 5 結束
+
+* kubectl port-forward / exec / cp
+
+* 使用 kubectl cp 到容器的時候, 要注意權限的問題, 預設是 nobody, 所以嘗試 cp 到 /tmp
+
+
+-------------------------------------
+
 2018/12/16
 
 進度: Chapter 5 ~ Chapter 5 p.50
