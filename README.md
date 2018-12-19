@@ -47,6 +47,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2018/12/19
+
+* 進度 Chapter 5 ~ Chapter 5 Persisting Data with Volumes
+
+* 下次 結束 Chapter 5, Start Chapter 6
+
+* 下次讀書會　2019/1/2
+
+-------------------------------------------------
+
 2018/11/28
 
 * 進度 Chapter 4 ~ Chapter 4 結束
