@@ -5,9 +5,17 @@ This is notes for Max reading
 
 -------------------------------------
 
+2018/12/30
+
+* 進度: Chapter 6 ~ Chapter 6 結束
+
+* kubectl label 
+
+-------------------------------------
+
 2018/12/18
 
-進度： Chapter 5 p.51 ~ Chapter 5 結束
+* 進度： Chapter 5 p.51 ~ Chapter 5 結束
 
 * kubectl port-forward / exec / cp
 
