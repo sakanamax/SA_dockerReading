@@ -5,6 +5,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/1
+
+* 進度 Chapter 7 ~ Chapter 7 P.84
+
+* kubectl expose 建立服務
+
+* kubectl edit 修改 resource 
+
+* 要研究一下 ssh node -L 方式如何作？
+
+-------------------------------------
+
 2018/12/30
 
 * 進度: Chapter 6 ~ Chapter 6 結束
