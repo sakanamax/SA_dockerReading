@@ -47,6 +47,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2019/1/2
+
+* 進度 Chapter 5 Different Ways of Using Volumes with Pods ~ Chapter 6 結束
+
+* 下次 Chapter 7
+
+* 下次讀書會 2019/1/16
+
+-------------------------------------------------
+
 2018/12/19
 
 * 進度 Chapter 5 ~ Chapter 5 Persisting Data with Volumes
