@@ -5,6 +5,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/8
+
+* 進度 Chapter 7 p.84 ~ Chapter 7 結束
+
+* kubectl get endpoint 觀察
+
+-------------------------------------
+
 2019/1/1
 
 * 進度 Chapter 7 ~ Chapter 7 P.84
