@@ -5,6 +5,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/9
+
+* 進度 Chapter 8 ~ Chapter 8 結束
+
+* kubectl scale / kubectl scale
+
+-------------------------------------
+
 2019/1/8
 
 * 進度 Chapter 7 p.84 ~ Chapter 7 結束
