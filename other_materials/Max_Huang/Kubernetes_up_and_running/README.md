@@ -5,6 +5,15 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/12
+
+* 進度 Chapter 9 ~ Chapter 9 結束
+
+* 9-1 的 daemonset 實驗, 因為是建立在 kube-system 的namespace, 所以查詢的時候要加上 --namespace kube-system
+
+* 不知道建立在 default 會如何？
+
+-------------------------------------
 2019/1/9
 
 * 進度 Chapter 8 ~ Chapter 8 結束
