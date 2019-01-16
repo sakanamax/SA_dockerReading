@@ -44,6 +44,15 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 * Member: Netman, Daniel, 翔二, 阿哲, Matt, sakana
 
+-------------------------------------------------
+
+2019/1/16
+
+* 進度 Chapter 7 ~ Chapter 7 結束
+
+* 下次 Chapter 8
+
+* 下次讀書會 1/30
 
 -------------------------------------------------
 
