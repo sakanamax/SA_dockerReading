@@ -5,6 +5,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/17
+
+* 進度 Chapter 10 ~ Chapter 10 結束
+
+* jobs - spec 裡面的 backoffLimit 限制重新啟動的次數, 例如 backoffLimit: 6 會跟 Pods 裡面的 restartCount 次數呼應, 當 restartCount 到達 backoffLimit 次數,那個 Pod 就會被刪除,有趣的是 - 當 restartPolicy: Never, 因為不會 restart, 所以就會一直建立 Pods
+
+-------------------------------------
+
 2019/1/12
 
 * 進度 Chapter 9 ~ Chapter 9 結束
