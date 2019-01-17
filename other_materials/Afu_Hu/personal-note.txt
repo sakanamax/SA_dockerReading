@@ -1,0 +1,5 @@
+個人閱讀網誌：
+https://fufu.gitbook.io/kk8s/
+
+第七章導讀網誌：
+https://tksmisafu.github.io/2019/01/15/k8s-service-1/
