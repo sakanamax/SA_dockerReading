@@ -5,6 +5,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/20
+
+* ITHOME - K8S 孤芳不自賞 https://ithelp.ithome.com.tw/users/20107062/ironman/1244 Day 7 ~ Day 13
+
+* kubectl get ingress 沒有看到 ADDRESS in DO, 下次看看別的會不會這樣
+
+-------------------------------------
+
 2019/1/17
 
 * 進度 Chapter 10 ~ Chapter 10 結束
