@@ -5,6 +5,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/1/23
+
+* 進度： Chapter 11 ~ Chapter 11 結束
+
+* imagePullSecrets 要找實際例子
+
+-------------------------------------
+
 2019/1/20
 
 * ITHOME - K8S 孤芳不自賞 https://ithelp.ithome.com.tw/users/20107062/ironman/1244 Day 7 ~ Day 13
