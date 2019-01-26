@@ -2,6 +2,11 @@ This is notes for Max reading
 
 * 書中附檔 https://github.com/kubernetes-up-and-running/examples
 
+-------------------------------------
+2019/1/26
+
+* 處理 smartgit 升級, 刪除 config.do, config.nchc
+
 
 -------------------------------------
 
