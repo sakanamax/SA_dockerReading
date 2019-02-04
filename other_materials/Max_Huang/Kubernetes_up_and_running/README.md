@@ -3,6 +3,15 @@ This is notes for Max reading
 * 書中附檔 https://github.com/kubernetes-up-and-running/examples
 
 -------------------------------------
+
+2019/2/4
+
+* 進度: Chapter 12 ~ Chapter 12 結束
+
+* deployment 的 annotations 要放在 metadata 底下, 書上範例有錯
+
+
+-------------------------------------
 2019/1/26
 
 * 處理 smartgit 升級, 刪除 config.do, config.nchc
