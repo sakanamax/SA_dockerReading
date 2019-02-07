@@ -4,6 +4,16 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/2/7
+
+* 進度: Chapter 13 ~ Chapter 13 Dynamic Volume Provisioning
+
+* 要找時間實做 persistent volume
+
+* 實做 Azure-disk with AKS in Azure
+
+-------------------------------------
+
 2019/2/4
 
 * 進度: Chapter 12 ~ Chapter 12 結束
