@@ -4,6 +4,12 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/2/9
+
+* 實做 Azure-file with AKS in Azure
+
+-------------------------------------
+
 2019/2/7
 
 * 進度: Chapter 13 ~ Chapter 13 Dynamic Volume Provisioning
