@@ -46,6 +46,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2019/2/13
+
+* 進度 Chapter 8 ~ Chapter 8 結束
+
+* 可以透過檢查 node 的 systemctl status  kubelet 服務來確定有沒有問題
+
+* 下次讀書會 3/5
+
+-------------------------------------------------
+
 2019/1/30
 
 * 更改下次讀書會到 2/13
