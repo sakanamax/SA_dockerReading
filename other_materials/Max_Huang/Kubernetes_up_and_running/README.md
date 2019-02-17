@@ -4,6 +4,12 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/2/17
+
+* 進度 Chapter 13 StatefulSet ~ Chapter 13 結束
+
+-------------------------------------
+
 2019/2/9
 
 * 實做 Azure-file with AKS in Azure
