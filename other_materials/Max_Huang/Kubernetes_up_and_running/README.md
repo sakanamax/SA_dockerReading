@@ -4,9 +4,19 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/2/27
+
+* 進度: Chapter 14 ~ Chapter 14 Skip and 結束
+
+* Parse-server docker build 有問題, 放棄
+
+* ghost / redis 沒有常態使用, 到時候再來看用那個 application, 目前預計用 nextcloud
+
+-------------------------------------
+
 2019/2/17
 
-* 進度 Chapter 13 StatefulSet ~ Chapter 13 結束
+* 進度: Chapter 13 StatefulSet ~ Chapter 13 結束
 
 -------------------------------------
 
