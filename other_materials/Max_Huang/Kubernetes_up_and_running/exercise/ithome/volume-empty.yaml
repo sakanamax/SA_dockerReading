@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volume-empty-nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - mountPath: /tmp/conf  #<=== 將 empty-volume 掛載到 /tmp/conf 下
+      name: empty-volume
+  volumes:
+  - name: empty-volume
+    emptyDir: {}            #<=== 指定為 emptyDir 

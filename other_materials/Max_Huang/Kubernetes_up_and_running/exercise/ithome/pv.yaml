@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: PersistentVolume   # <=== 指定物件種類為 PV
+metadata:
+  name: pv001		      #<=== PV 名稱
+spec:
+  capacity:
+    storage: 2Gi          #<=== 指定大小
+  accessModes:
+  - ReadWriteOnce         #<=== 指定存取模式
+  hostPath:               #<=== 綁定在 host 的 /tmp 目錄
+    path: /tmp

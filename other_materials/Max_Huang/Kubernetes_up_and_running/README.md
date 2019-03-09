@@ -4,6 +4,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2019/3/9
+
+* 進度: ITHOME - K8S 孤芳不自賞 https://ithelp.ithome.com.tw/users/20107062/ironman/1244 Day 14  ~ Day 15
+
+* 對於是否要有 PV 或是可以像是 StorageClass 才能有 PersistentVolumeClaim 問題在群組提出討論
+
+-------------------------------------
+
 2019/2/27
 
 * 進度: Chapter 14 ~ Chapter 14 Skip and 結束
