@@ -9,6 +9,9 @@ This is notes for Max reading
 * 進度: ITHOME - K8S 孤芳不自賞 https://ithelp.ithome.com.tw/users/20107062/ironman/1244 Day 14  ~ Day 15
 
 * 對於是否要有 PV 或是可以像是 StorageClass 才能有 PersistentVolumeClaim 問題在群組提出討論
+  * PV 是比較早期的作法, 因為如果每次都要建立 PV, 才能使用 PVC, 會很麻煩, 所以之後有 StorageClass 那樣的方式
+  * 所以如果有 StorageClass 的方式, 就可以直接使用 pvc 來對應, 但是如果沒有使用 StorageClass 就使用 pvc 就會產生 pending
+  * https://godleon.github.io/blog/Kubernetes/k8s-Config-StorageClass-with-NFS/
 
 -------------------------------------
 

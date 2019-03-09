@@ -429,8 +429,7 @@
       &gt; kubectl get persistentvolumes
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2453,8 +2452,7 @@
       &#20351;&#29992; kubectl get pv &#35264;&#23519;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1552122209118" ID="ID_446864995" MODIFIED="1552122210972" TEXT="Available&#xff1a;&#x8868;&#x793a; PV &#x70ba;&#x53ef;&#x7528;&#x72c0;&#x614b;"/>
 <node CREATED="1552122215689" ID="ID_1668915241" MODIFIED="1552122227947" TEXT="Bound&#xff1a;&#x8868;&#x793a;&#x5df2;&#x7d81;&#x5b9a;&#x5230; PVC"/>
@@ -2465,6 +2463,10 @@
 <node CREATED="1552122305201" ID="ID_486164532" MODIFIED="1552122306062" TEXT="Retain&#xff1a;&#x624b;&#x52d5;&#x56de;&#x6536;"/>
 <node CREATED="1552122307299" ID="ID_1334752853" MODIFIED="1552122319243" TEXT="Recycle&#xff1a;&#x900f;&#x904e;&#x522a;&#x9664;&#x547d;&#x4ee4; rm -rf /thevolume/*"/>
 <node CREATED="1552122331943" ID="ID_928675238" MODIFIED="1552122333645" TEXT="Delete&#xff1a;&#x7528;&#x65bc; AWS EBS, GCE PD, Azure Disk &#x7b49;&#x5132;&#x5b58;&#x5f8c;&#x7aef;&#xff0c;&#x522a;&#x9664; PV &#x7684;&#x540c;&#x6642;&#x4e5f;&#x6703;&#x4e00;&#x4f75;&#x522a;&#x9664;&#x5f8c;&#x7aef;&#x5132;&#x5b58;&#x78c1;&#x789f;&#x3002;"/>
+</node>
+<node CREATED="1552124988109" ID="ID_1548727455" MODIFIED="1552124990371" TEXT="notes">
+<node CREATED="1552124991405" ID="ID_422283495" MODIFIED="1552125014130" TEXT="* PV &#x662f;&#x6bd4;&#x8f03;&#x65e9;&#x671f;&#x7684;&#x4f5c;&#x6cd5;, &#x56e0;&#x70ba;&#x5982;&#x679c;&#x6bcf;&#x6b21;&#x90fd;&#x8981;&#x5efa;&#x7acb; PV, &#x624d;&#x80fd;&#x4f7f;&#x7528; PVC, &#x6703;&#x5f88;&#x9ebb;&#x7169;, &#x6240;&#x4ee5;&#x4e4b;&#x5f8c;&#x6709; StorageClass &#x90a3;&#x6a23;&#x7684;&#x65b9;&#x5f0f;   &#xa;* &#x6240;&#x4ee5;&#x5982;&#x679c;&#x6709; StorageClass &#x7684;&#x65b9;&#x5f0f;, &#x5c31;&#x53ef;&#x4ee5;&#x76f4;&#x63a5;&#x4f7f;&#x7528; pvc &#x4f86;&#x5c0d;&#x61c9;, &#x4f46;&#x662f;&#x5982;&#x679c;&#x6c92;&#x6709;&#x4f7f;&#x7528; StorageClass &#x5c31;&#x4f7f;&#x7528; pvc &#x5c31;&#x6703;&#x7522;&#x751f; pending"/>
+<node CREATED="1552125021671" ID="ID_931534670" MODIFIED="1552125030431" TEXT="https://godleon.github.io/blog/Kubernetes/k8s-Config-StorageClass-with-NFS/"/>
 </node>
 </node>
 <node CREATED="1549547065618" ID="ID_873938790" MODIFIED="1549547083144" TEXT="Dynamic Volume Provisioning"/>
