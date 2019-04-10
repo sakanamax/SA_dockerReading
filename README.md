@@ -46,6 +46,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2019/4/10
+
+* Chapter 11 ~ Chapter 11 結束
+
+* Netman 推薦看 https://kubernetes.io/docs/tasks/ ( 考試的話 )
+
+* 下次讀書會 2019/4/24
+
+-------------------------------------------------
+
 2019/3/26
 
 * Chapter 10 ~ Chapter 10 結束
