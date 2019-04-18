@@ -1,0 +1,26 @@
+# openSUSE Leap 15 with ansible, azure-cli
+FROM opensuse/leap:15
+
+# Author
+# MAINTAINER 已經棄用, 之後要使用 LABEL 方式
+LABEL maintainer="sakana@cycu.org.tw"
+
+# Install python2-pip, upgrade pip, ansible[azure]
+RUN zypper install -y python2-pip && \
+  pip2 install --upgrade pip && \
+  pip2 install ansible[azure]
+
+# Install wget, download azure_rm.py, set permission
+RUN zypper install -y wget && \
+  wget  https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/azure_rm.py && \
+  chmod a+x azure_rm.py
+
+# Install azure-cli
+RUN zypper install -y curl && \
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
+  zypper addrepo --name 'Azure CLI' --check https://packages.microsoft.com/yumrepos/azure-cli azure-cli && \
+  zypper install --from azure-cli -y azure-cli
+
+#install vim
+RUN zypper install -y vim
+
