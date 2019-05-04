@@ -6,7 +6,7 @@ FROM opensuse/leap:15
 LABEL maintainer="sakana@cycu.org.tw"
 
 # Install openssh-server and python
-RUN zypper -n install openssh python
+RUN zypper -n install openssh python python-xml
 
 # Create SSH key
 RUN ssh-keygen -t rsa  -f /etc/ssh/ssh_host_rsa_key -N "" && \
