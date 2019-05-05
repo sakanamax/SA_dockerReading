@@ -45,4 +45,4 @@ RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud
   tar zxvf google-cloud-sdk-240.0.0-linux-x86_64.tar.gz && \
   /google-cloud-sdk/install.sh && \
   echo "if [ -f '/google-cloud-sdk/path.bash.inc' ]; then . '/google-cloud-sdk/path.bash.inc'; fi" >> /root/.bashrc && \
-  echo "if [ -f '/home/sakana/google-cloud-sdk/completion.bash.inc' ]; then . '/home/sakana/google-cloud-sdk/completion.bash.inc'; fi" >> /root/.bashrc
+  echo "if [ -f '/google-cloud-sdk/completion.bash.inc' ]; then . '/google-cloud-sdk/completion.bash.inc'; fi" >> /root/.bashrc
