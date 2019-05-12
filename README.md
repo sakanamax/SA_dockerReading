@@ -50,7 +50,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 * Chapter 13 ~ Chapter 13 結束
 
-* 下次讀書會 2019/5/29
+* 下次讀書會 2019/5/22 -- Haway 改回 5/22
 
 -------------------------------------------------
 
