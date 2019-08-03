@@ -45,6 +45,9 @@ RUN echo "set encoding=utf8" > /root/.vimrc
 RUN pip install awscli
 RUN echo "source /usr/bin/aws_bash_completer" >> /root/.bashrc
 
+# Install boto and boto3 for aws use
+RUN pip install boto && \
+  pip install boto3
 
 # Install google cloud SDK 240
 ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
