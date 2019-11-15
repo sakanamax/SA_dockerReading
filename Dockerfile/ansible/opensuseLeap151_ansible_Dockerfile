@@ -1,0 +1,55 @@
+# openSUSE Leap 15.1 with ansible, azure-cli
+FROM opensuse/leap:15.1
+
+# Author
+# MAINTAINER 已經棄用, 之後要使用 LABEL 方式
+# update: 20191116
+LABEL maintainer="sakana@cycu.org.tw"
+
+# Install python2-pip, upgrade pip, ansible[azure]
+RUN zypper install -y python2-pip && \
+  pip2 install --upgrade pip && \
+  pip2 install ansible[azure]
+
+# Install openssh, set ls alias
+RUN zypper install -y openssh
+RUN echo "alias ls='ls --color=tty'" >> /root/.bashrc
+
+# Install wget, download azure_rm.py, set permission
+RUN zypper install -y wget && \
+  wget  https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/azure_rm.py && \
+  chmod a+x azure_rm.py && \
+  mv azure_rm.py /root
+
+# Create working directory in /root
+RUN mkdir /root/.azure && \
+  mkdir /root/.aws && \
+  mkdir /root/playbook && \
+  mkdir -p /root/.config/gcloud && \
+  wget https://raw.githubusercontent.com/sakanamax/LearnAnsible/master/template/ansible.cfg && \
+  mv /ansible.cfg /root && \
+  wget https://raw.githubusercontent.com/sakanamax/LearnAnsible/master/template/hosts && \
+  mv /hosts /root
+
+# Install azure-cli
+RUN zypper install -y curl && \
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
+  zypper addrepo --name 'Azure CLI' --check https://packages.microsoft.com/yumrepos/azure-cli azure-cli && \
+  zypper install --from azure-cli -y azure-cli
+
+#install vim tar gzip
+RUN zypper install -y vim tar gzip
+RUN echo "set encoding=utf8" > /root/.vimrc
+
+# Install awscli
+RUN pip install awscli
+RUN echo "source /usr/bin/aws_bash_completer" >> /root/.bashrc
+
+
+# Install google cloud SDK 271
+ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
+RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-271.0.0-linux-x86_64.tar.gz && \
+  tar zxvf google-cloud-sdk-271.0.0-linux-x86_64.tar.gz && \
+  /google-cloud-sdk/install.sh && \
+  echo "if [ -f '/google-cloud-sdk/path.bash.inc' ]; then . '/google-cloud-sdk/path.bash.inc'; fi" >> /root/.bashrc && \
+  echo "if [ -f '/google-cloud-sdk/completion.bash.inc' ]; then . '/google-cloud-sdk/completion.bash.inc'; fi" >> /root/.bashrc
