@@ -3,7 +3,7 @@ FROM opensuse/leap:15.1
 
 # Author
 # MAINTAINER 已經棄用, 之後要使用 LABEL 方式
-# update: 20191116
+# update: 20191122
 LABEL maintainer="sakana@cycu.org.tw"
 
 # Install python2-pip, upgrade pip, ansible[azure]
@@ -37,8 +37,8 @@ RUN zypper install -y curl && \
   zypper addrepo --name 'Azure CLI' --check https://packages.microsoft.com/yumrepos/azure-cli azure-cli && \
   zypper install --from azure-cli -y azure-cli
 
-#install vim tar gzip
-RUN zypper install -y vim tar gzip
+#install vim tar gzip jq
+RUN zypper install -y vim tar gzip jq
 RUN echo "set encoding=utf8" > /root/.vimrc
 
 # Install awscli
