@@ -1,0 +1,10 @@
+# openSUSE Leap 15.1 with ansible, azure-cli
+FROM sakana/ansible_opensuse151:20200105
+
+# Author
+# MAINTAINER 已經棄用, 之後要使用 LABEL 方式
+# update: 20200107
+LABEL maintainer="sakana@cycu.org.tw"
+
+# Set LANG for UTF-8 - for Chinese
+ENV LANG C.UTF-8
