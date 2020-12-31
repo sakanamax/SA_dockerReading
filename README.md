@@ -2,8 +2,12 @@ This is for SA docker Reading group
 
 預計以線上的方式
 * 雙週一次, 平日晚上, 目前可能是 21:00 ~ 22:00 或是 20:00 ~ 21:00 , 看大家時間的集成.
-* chat on slack
+* chat on slack or Telegram
 * 檔案放 GitHub
+
+書 Kubernetes up and running - 2nd Edition ( 2021年讀書會 )
+
+https://www.tenlong.com.tw/products/9789865024895
 
 書 Kubernetes up and running ( 2018年讀書會 )
 
@@ -39,6 +43,10 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 
 -------------------------------------------------
+
+##2021年讀書會
+
+* Member: 治廷, 奕德, 韋廷, 偉哲, 柏勳, 樹仁, sakana
 
 ##2018年讀書會
 
