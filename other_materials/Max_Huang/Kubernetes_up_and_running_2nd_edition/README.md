@@ -49,6 +49,9 @@ kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 
 * 這次的輸出沒有看到 sshMaster 的相關, 後續再確認
 
 安裝 kubectl
+
+\> az  aks  install-cli
+
 * 一樣暫時性的使用 #chmod o+w /usr/local/bin 來讓一般使用者可以安裝
 
 取得驗證資料
