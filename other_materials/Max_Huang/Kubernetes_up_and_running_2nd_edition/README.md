@@ -10,6 +10,8 @@ kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 
 
 \> az aks create --resource-group study2021 --name sakanaAKScluster --node-count 1 --node-vm-size standard_b2s --generate-ssh-keys
 
+確認 vscode kubernetes extionsion
+
 ==== 處理 Cloud Shell 相關 ====
 
 將 RSA Key 同步到 Cloud Shell - 使用 vscode Azure extension
