@@ -2,6 +2,30 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/4
+
+kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 Resource Group study2021
+
+測試用新的 Resource Group 建立 AKS
+
+\> az aks create --resource-group study2021 --name sakanaAKScluster --node-count 1 --node-vm-size standard_b2s --generate-ssh-keys
+
+==== 處理 Cloud Shell 相關 ====
+
+將 RSA Key 同步到 Cloud Shell - 使用 vscode Azure extension
+
+使用 az 指令 連接 kubernetes 叢集
+
+\$ az  aks  get-credentials  --resource-group  study2021  --name  sakanaAKScluster
+
+測試 kubectl 是否可以使用
+
+\$ kubectl get node
+
+下次處理 MacBook 部分
+
+-------------------------------------
+
 2020/12/30
 
 整理之前的資訊
