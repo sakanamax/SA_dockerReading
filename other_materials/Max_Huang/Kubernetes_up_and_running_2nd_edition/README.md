@@ -24,7 +24,10 @@ kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 
 
 \$ kubectl get node
 
+進度: Chapter 1 p1 ~ Chapter 1 p3
+
 下次處理 MacBook 部分
+
 
 -------------------------------------
 
