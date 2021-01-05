@@ -2,6 +2,22 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/5
+
+==== 處理 MacBook ====
+
+同步 RSA Key
+
+使用 az 指令 連接 kubernetes 叢集
+
+\$ az  aks  get-credentials  --resource-group  study2021  --name  sakanaAKScluster
+
+測試 kubectl 是否可以使用
+
+\$ kubectl get node
+
+-------------------------------------
+
 2021/1/4
 
 kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 Resource Group study2021
