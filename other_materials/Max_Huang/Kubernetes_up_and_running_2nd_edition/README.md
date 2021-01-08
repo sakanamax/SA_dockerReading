@@ -2,6 +2,57 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/8
+
+* 處理環境  kick off
+
+-------------------------------------
+
+2021/1/5
+
+==== 處理 MacBook ====
+
+同步 RSA Key
+
+使用 az 指令 連接 kubernetes 叢集
+
+\$ az  aks  get-credentials  --resource-group  study2021  --name  sakanaAKScluster
+
+測試 kubectl 是否可以使用
+
+\$ kubectl get node
+
+-------------------------------------
+
+2021/1/4
+
+kick off meeting 決定不共用 Resource Group, 所以重新建立一個新的 Resource Group study2021
+
+測試用新的 Resource Group 建立 AKS
+
+\> az aks create --resource-group study2021 --name sakanaAKScluster --node-count 1 --node-vm-size standard_b2s --generate-ssh-keys
+
+確認 vscode kubernetes extionsion
+
+==== 處理 Cloud Shell 相關 ====
+
+將 RSA Key 同步到 Cloud Shell - 使用 vscode Azure extension
+
+使用 az 指令 連接 kubernetes 叢集
+
+\$ az  aks  get-credentials  --resource-group  study2021  --name  sakanaAKScluster
+
+測試 kubectl 是否可以使用
+
+\$ kubectl get node
+
+進度: Chapter 1 p1 ~ Chapter 1 p3
+
+下次處理 MacBook 部分
+
+
+-------------------------------------
+
 2020/12/30
 
 整理之前的資訊
@@ -25,6 +76,9 @@ This is notes for Max reading
 * 這次的輸出沒有看到 sshMaster 的相關, 後續再確認
 
 安裝 kubectl
+
+\> az  aks  install-cli
+
 * 一樣暫時性的使用 #chmod o+w /usr/local/bin 來讓一般使用者可以安裝
 
 取得驗證資料
