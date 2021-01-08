@@ -4,7 +4,7 @@ This is notes for Max reading
 
 2021/1/8
 
-* 處理環境  kick off
+* 處理環境  kick off 說明
 
 -------------------------------------
 
