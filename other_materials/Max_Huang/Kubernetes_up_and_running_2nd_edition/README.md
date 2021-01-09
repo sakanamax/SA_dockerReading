@@ -2,6 +2,13 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/9
+
+* 整理讀書會時間
+* git clone 方式提供 http://sakananote2.blogspot.com/2020/08/vscode-gitlab.html
+
+-------------------------------------
+
 2021/1/8
 
 * 處理環境  kick off 說明
