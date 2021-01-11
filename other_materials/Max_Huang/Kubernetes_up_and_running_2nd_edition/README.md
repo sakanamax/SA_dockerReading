@@ -1,4 +1,13 @@
+### Kubernetes_up_and_running_2nd_edition
 This is notes for Max reading
+
+-------------------------------------
+
+2021/1/11
+
+* Chapter 1 簡報整理 [ 20210114_meeting ]
+* Chapter 1 ~ Chapter 1 結束
+* 下次 Chapter 2
 
 -------------------------------------
 
