@@ -48,6 +48,11 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 * Member: 治廷, 奕德, 韋廷, 偉哲, 柏勳, 樹仁, sakana
 
+-------------------------------------------------
+
+第一次讀書會 預定 1/14, Chapter 1
+
+
 ##2018年讀書會
 
 * Member: Netman, Daniel, 翔二, 阿哲, Matt, sakana

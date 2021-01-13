@@ -1,4 +1,26 @@
+### Kubernetes_up_and_running_2nd_edition
 This is notes for Max reading
+
+-------------------------------------
+
+2021/1/11
+
+* Chapter 1 簡報整理 [ 20210114_meeting ]
+* Chapter 1 ~ Chapter 1 結束
+* 下次 Chapter 2
+
+-------------------------------------
+
+2021/1/9
+
+* 整理讀書會時間
+* git clone 方式提供 http://sakananote2.blogspot.com/2020/08/vscode-gitlab.html
+
+-------------------------------------
+
+2021/1/8
+
+* 處理環境  kick off 說明
 
 -------------------------------------
 
