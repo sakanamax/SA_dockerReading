@@ -3,6 +3,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/14
+
+* 升級 Ｍac 的 git from 2.21 (Mac) to Brew 2.30
+* 參考 https://garynil.tw/2018/05/762/%E5%A6%82%E4%BD%95%E4%BB%A5-homebrew-%E5%8F%96%E4%BB%A3-macos-%E5%85%A7%E5%BB%BA-git-%E4%B8%A6%E6%9B%B4%E6%96%B0/
+* $ brew link git
+
+-------------------------------------
+
 2021/1/11
 
 * Chapter 1 簡報整理 [ 20210114_meeting ]
