@@ -50,7 +50,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
-第一次讀書會 預定 1/14, Chapter 1
+第一次讀書會 1/14, Chapter 1
 
 
 ##2018年讀書會
