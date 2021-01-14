@@ -44,7 +44,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
-##2021年讀書會
+##2021年讀書會 Kubernetes up and running - 2nd Edition
 
 * Member: 治廷, 奕德, 韋廷, 偉哲, 柏勳, 樹仁, sakana
 
