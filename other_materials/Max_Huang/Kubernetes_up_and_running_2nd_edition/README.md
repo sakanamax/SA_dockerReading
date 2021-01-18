@@ -7,7 +7,7 @@ This is notes for Max reading
 
 * Chapter 2 ~ Chapter 2 p.19
 * docker run 失敗, 下次找一下原因,"Error: Cannot find module 'express'"
-* 應該是書的錯誤, 參考 https://www.oreilly.com/catalog/errataunconfirmed.csp?isbn=0636920223788 , 需要驗證
+* 應該是書的錯誤, Dockerfile 內應該要 npm install express 參考 https://www.oreilly.com/catalog/errataunconfirmed.csp?isbn=0636920223788 , 需要驗證
 * 下次看 Multistage Image Builds
 
 -------------------------------------
