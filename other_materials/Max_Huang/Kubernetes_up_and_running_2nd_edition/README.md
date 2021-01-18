@@ -3,6 +3,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/18
+
+* Chapter 2 ~ Chapter 2 p.19
+* docker run 失敗, 下次找一下原因,"Error: Cannot find module 'express'"
+* 下次看 Multistage Image Builds
+
+-------------------------------------
+
 2021/1/14
 
 * 升級 Ｍac 的 git from 2.21 (Mac) to Brew 2.30

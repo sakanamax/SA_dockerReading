@@ -1,0 +1,10 @@
+{
+    "name": "Simple-node",
+    "version": "1.0.0",
+    "description": "A sample stimple application for kubernetes Up & Running",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Max"
+}
