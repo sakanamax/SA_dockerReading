@@ -7,7 +7,7 @@ This is notes for Max reading
 
 * Chapter 2 p.19 ~ Chapter 2 結束
 * 進一步瞭解 Dockerfile Multi stage build 參考 https://tachingchen.com/tw/blog/docker-multi-stage-builds/
-  * 想法上就是多個 From , 然後利用 AS 方式命名, 然後最後的時候 利用 COPY --from=某一個FROM 命名 將他目錄下的執行檔案, 複製到這個 image 目錄下, 達成 image 瘦身的目的
+  * 想法上就是多個 From , 然後利用 AS 方式命名(stage), 然後最後的時候 利用 COPY --from=某一個FROM 命名(stage) 將他目錄下的執行檔案, 複製到這個 image 目錄下, 達成 image 瘦身的目的
 * 限制 docker 資源的相關實作與驗證可以參考之前自己的文章 http://sakananote2.blogspot.com/2018/03/docker-resource-limit-memory-limit.html
   * 透過 docker stats 來觀察
 * 書上有提到可以利用 spotify 的 docker-gc 來清理沒用到的 container and image
