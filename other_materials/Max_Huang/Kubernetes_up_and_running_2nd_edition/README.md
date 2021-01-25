@@ -3,6 +3,16 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/25
+
+* Chapter 3 ~ 
+* AWS - eksctl https://eksctl.io/ 與 https://docs.aws.amazon.com/zh_tw/eks/latest/userguide/getting-started-eksctl.html
+* 使用 Azure 的範例 https://docs.microsoft.com/zh-tw/azure/aks/kubernetes-walkthrough 建立 azure-vote, 然後登入其中的 container 去觀察 /etc/resolv.conf, 證明是否為 kube-dns 的 Cluster IP
+* Azure 目前預設停用 Kubenetes UI (dashboard), 使用 Kubernetes 資源檢視
+
+
+-------------------------------------
+
 2021/1/20
 
 * Chapter 2 p.19 ~ Chapter 2 結束
