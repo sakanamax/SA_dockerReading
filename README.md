@@ -50,6 +50,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2021/1/28
+
+* Chapter 2 ~ Chapter 3 p.30
+
+* 下次從 The Kubernetes Client 開始
+
+* 下次讀書會 2021/2/18
+
+-------------------------------------------------
+
 2021/1/14
 
 * 第一次讀書會 
