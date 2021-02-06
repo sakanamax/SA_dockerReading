@@ -3,6 +3,47 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/1/25
+
+* Chapter 3 ~ Chapter 3 結束
+* AWS - eksctl https://eksctl.io/ 與 https://docs.aws.amazon.com/zh_tw/eks/latest/userguide/getting-started-eksctl.html
+* 使用 Azure 的範例 https://docs.microsoft.com/zh-tw/azure/aks/kubernetes-walkthrough 建立 azure-vote, 然後登入其中的 container 去觀察 /etc/resolv.conf, 證明是否為 kube-dns 的 Cluster IP
+* Azure 目前預設停用 Kubenetes UI (dashboard), 使用 Kubernetes 資源檢視
+
+
+-------------------------------------
+
+2021/1/20
+
+* Chapter 2 p.19 ~ Chapter 2 結束
+* 進一步瞭解 Dockerfile Multi stage build 參考 https://tachingchen.com/tw/blog/docker-multi-stage-builds/
+  * 想法上就是多個 From , 然後利用 AS 方式命名(stage), 然後最後的時候 利用 COPY --from=某一個FROM 命名(stage) 將他目錄下的執行檔案, 複製到這個 image 目錄下, 達成 image 瘦身的目的
+* 限制 docker 資源的相關實作與驗證可以參考之前自己的文章 http://sakananote2.blogspot.com/2018/03/docker-resource-limit-memory-limit.html
+  * 透過 docker stats 來觀察
+* 書上有提到可以利用 spotify 的 docker-gc 來清理沒用到的 container and image
+  * 用法 docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc:ro spotify/docker-gc
+  * 實際實驗如果同一個 image 有兩個 tag, 或是為其他 image 的 base, 就不會刪除, 然後如果前面的 image 無法刪除, 那後面的就不會繼續下去, 但是還是方便的小工具.
+
+
+-------------------------------------
+
+2021/1/18
+
+* Chapter 2 ~ Chapter 2 p.19
+* docker run 失敗, 下次找一下原因,"Error: Cannot find module 'express'"
+* 應該是書的錯誤, Dockerfile 內應該要 npm install express 參考 https://www.oreilly.com/catalog/errataunconfirmed.csp?isbn=0636920223788 , 已驗證成功
+* 下次看 Multistage Image Builds
+
+-------------------------------------
+
+2021/1/14
+
+* 升級 Ｍac 的 git from 2.21 (Mac) to Brew 2.30
+* 參考 https://garynil.tw/2018/05/762/%E5%A6%82%E4%BD%95%E4%BB%A5-homebrew-%E5%8F%96%E4%BB%A3-macos-%E5%85%A7%E5%BB%BA-git-%E4%B8%A6%E6%9B%B4%E6%96%B0/
+* $ brew link git
+
+-------------------------------------
+
 2021/1/11
 
 * Chapter 1 簡報整理 [ 20210114_meeting ]
