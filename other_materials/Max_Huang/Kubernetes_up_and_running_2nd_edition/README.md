@@ -3,6 +3,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/2/7
+
+* Chapter 4 ~ Chapter 4 結束
+* --dry-run 在新版改為 --dry-run=client , 還有 server 與 none 兩種, 後面再來研究
+* kubectl exec 新版要在指令前面加上 -- , 然後如果沒有指定 container 預設抓第一個
+* kubectl top node / kubectl top pod 觀察資源使用情形
+* kubectl completion bash 建議可以加入到 ~/.bashrc 內, Mac 使用 brew 要加入到 ~/.bash_profile
+  * source <(kubectl completion bash)
+* 更新 mindmap
+
+-------------------------------------
+
 2021/1/25
 
 * Chapter 3 ~ Chapter 3 結束
