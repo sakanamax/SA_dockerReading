@@ -1,4 +1,69 @@
 -------------------------------------
+2021/2/18
+
+Chapter4 study
+
+#Namespace
+
+1.Show namespace
+
+$kubectl get namespaces
+
+2.Create namespace
+
+$kubectl create namespace demo
+
+3.Show namespace
+
+$kubectl get namespaces
+
+#Context
+
+1.Show config
+
+$kubectl config view
+
+2.Set context name
+
+$kubectl config set-context demo-context --namespace=demo
+
+3.Switch to new context
+
+$kubectl config use-context demo-context
+
+4.Show default namespace
+
+$kubectl config view |grep namespace
+
+5.Show context
+
+$kubectl config get-contexts
+
+6.Switch to default context
+
+$kubectl config use-context demo-context
+
+#Viewing Kubernetes API Objects
+
+1.Show pod ip
+
+$kubectl get pods
+
+$kubectl get pods azure-vote-front-84c8bf64fc-bdtq7 -o jsonpath="{.status.podIP}"
+
+2.Describe pod
+
+$kubectl describe pods azure-vote-front-84c8bf64fc-bdtq7
+
+3.Creating, Updating, and Destroying Kubernetes Objects
+
+1.Create Object
+
+$kubectl apply -f azure-vote.yaml
+
+2.--dry-run已改為--dry-run=client
+
+-------------------------------------
 2021/2/6
 
 Chapter3 study
