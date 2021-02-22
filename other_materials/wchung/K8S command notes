@@ -1,4 +1,4 @@
-# 20210218 K8S 讀書會導讀第三章筆記
+# K8S command notes
 kubectl version
 kubectl get nodes
 kubectl describe nodes NODE_NAME
