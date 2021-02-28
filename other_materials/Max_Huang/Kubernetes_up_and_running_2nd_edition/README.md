@@ -3,6 +3,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/2/28
+
+* Chapter 5 ~ Chpater 5 P.49
+* kubectl 的 --generator 已經棄用
+* 下次 Chapter 5 P.49 存取 Pod
+
+-------------------------------------
+
 2021/2/7
 
 * Chapter 4 ~ Chapter 4 結束
