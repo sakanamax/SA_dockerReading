@@ -1,5 +1,5 @@
 -------------------------------------
-2021/2/18
+2021/3/3
 
 Chapter4 study
 
@@ -55,13 +55,97 @@ $kubectl get pods azure-vote-front-84c8bf64fc-bdtq7 -o jsonpath="{.status.podIP}
 
 $kubectl describe pods azure-vote-front-84c8bf64fc-bdtq7
 
-3.Creating, Updating, and Destroying Kubernetes Objects
+#Creating, Updating, and Destroying Kubernetes Objects
 
-1.Create Object
+1.Create object
 
 $kubectl apply -f azure-vote.yaml
 
-2.--dry-run已改為--dry-run=client
+***--dry-run已改為--dry-run=client***
+
+2.Update object
+
+$kubectl edit -f azure-vote.yaml
+
+3.Delete object
+
+$kubectl delete -f azure-vote.yaml
+
+#Labeling and Annotating Objects
+
+1.Show pods label
+
+$kubectl  get pods --show-labels
+
+2.Add pod label
+
+$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color=red
+
+3.Overwrite pod label
+
+$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color=blue --overwrite
+
+4.Delete pod label
+
+$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color-
+
+#Debugging Commands
+
+1.Show pod log
+
+$kubectl  logs azure-vote-back-798985f86b-hf8fl
+
+2.Login pod
+
+$Kubectl exec -it azure-vote-back-798985f86b-hf8fl -- bash
+
+$Kubectl attach -it azure-vote-back-798985f86b-hf8fl
+
+3.Copy file
+
+$Kubectl cp azure-vote-back-798985f86b-hf8fl:/file /tmp/file
+
+4.Forward port
+
+$Kubectl port-foward azure-vote-front-84c8bf64fc-f6cbq 8080:80
+
+5.monitor
+
+$Kubectl top nodes
+
+$Kubectl top pods
+
+#Command Autocompletion
+
+1.Install
+
+mac:
+
+$brew install bash-completion
+
+centos:
+
+$yum install bash-completion
+
+ubuntu:
+
+$apt install bash-completion
+
+2.Source
+
+mac:
+
+$source <(kubectl completion bash)
+
+linux:
+
+$echo “source <(kubectl completion bash)” >> ${HOME}/.bashrc
+
+#Summary
+
+$kubectl --help
+
+$kubectl --help cp
 
 -------------------------------------
 2021/2/6
