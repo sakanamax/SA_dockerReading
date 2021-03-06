@@ -1,0 +1,7 @@
+# K8S command notes
+kubectl version
+kubectl get nodes
+kubectl describe nodes NODE_NAME
+kubectl get daemonset --namespace kube-system
+kubectl get deployments --namespace kube-system
+kubectl get services --namespace kube-system

@@ -3,6 +3,22 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/3/2
+
+* Chapter 5 P.49 ~ Chapter 5 P.53
+* 使用 kubectl cp 到容器的時候, 要注意權限的問題, 預設是 nobody, 但是大多數都是複製出來
+* 下次 Chapter 5 P.53 的 Readiness 探測器
+
+-------------------------------------
+
+2021/2/28
+
+* Chapter 5 ~ Chpater 5 P.49
+* kubectl 的 --generator 已經棄用
+* 下次 Chapter 5 P.49 存取 Pod
+
+-------------------------------------
+
 2021/2/7
 
 * Chapter 4 ~ Chapter 4 結束
