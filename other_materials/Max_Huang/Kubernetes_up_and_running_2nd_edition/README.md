@@ -3,6 +3,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/3/8
+
+* Chapter 5 P.53 ~ Chapter 5 P.57
+* 研究如何 ssh 連線到 AKS node
+* 下次 Chapter 5 P.57 在 Pod 使用磁碟區
+
+-------------------------------------
+
 2021/3/2
 
 * Chapter 5 P.49 ~ Chapter 5 P.53
