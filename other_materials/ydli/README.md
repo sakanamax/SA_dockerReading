@@ -1,4 +1,19 @@
 -------------------------------------
+2021/3/9
+
+Chapter5 study
+
+1.Use kubectl create pod
+
+$kubectl.exe run kuard --generator=run-pod/v1 --image=ydli/kuard:latest
+
+$kubectl get pods
+
+2.Use kubectl delete pod
+
+$kubectl delete pods/kuard
+
+-------------------------------------
 2021/3/3
 
 Chapter4 study
@@ -217,14 +232,60 @@ $az aks delete --resource-group k8s-study --name ydliAKScluster
 -------------------------------------
 2021/1/21
 
-#example file
+chapter 2 study
 
-https://github.com/kubernetes-up-and-running/kuard
+1.Git clone kuard
+
+$git clone https://github.com/kubernetes-up-and-running/kuard
+
+2.Build kuard
+
+$cd kuard
+
+$docker build -t kuard .
+
+3.Run kuard container
+
+$docker run --rm -p 8080:8080 kuard
+
+$docker run -d --name kuard --publish 8080:8080 kuard
+
+4.Tag image
+
+$docker tag kuard ydli/kuard:latest
+
+5.Push image
+
+$docker push ydli/kuard:latest
+
+6.Test kuard container
+
+$docker run -d --name kuard --publish 8080:8080 ydli/kuard
+
+$curl http://localhost:8080
+
+7.Stop and remove container
+
+$docker stop kuard
+
+$docker rm kuard
+
+8.Limit memory
+
+$docker run -d --name kuard --publish 8080:8080 --memory 200m --memory-swap 1G ydli/kuard
+
+9.Limit cpu and memory
+
+$docker run -d --name kuard --publish 8080:8080 --memory 200m --memory-swap 1G --cpu-share 1024 ydli/kuard
+
+10.Delete image
+
+$docker rmi ydli/kuard:latest
 
 -------------------------------------
 2021/1/14
 
-chapter1
+chapter 1 study
 
 -------------------------------------
 2020/12/31
