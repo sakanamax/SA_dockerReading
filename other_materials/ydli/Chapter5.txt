@@ -1,0 +1,72 @@
+-------------------------------------
+2021/3/10
+
+Chapter5 study
+
+1.Use kubectl create pod
+
+$kubectl.exe run kuard --generator=run-pod/v1 --image=ydli/kuard:latest
+
+$kubectl get pods
+
+2.Use kubectl delete pod
+
+$kubectl delete pods/kuard
+
+3.Create Pod Manifest file(kuard-pod.yaml)
+
+4.Run Pod
+
+$kubectl apply -f kuard-pod.yaml
+
+5.Show pod list
+
+$kubectl get pods
+
+6.Show pod detail imformation
+
+$kubectl describe pods kuard
+
+7.Delete pod
+
+$kubectl delete pods/kuard
+
+$kubectl delete -f kuard-pod.yaml
+
+8.Port foward
+
+$kubectl apply -f kuard-pod.yaml
+
+$kubectl port-forward kuard 8080:8080
+
+9.Show pod log
+
+$kubectl log kuard
+
+10.Exec command in container
+
+$kubectl exec kuard -- date
+
+11.Copy file
+
+$kubectl.exe cp .\azure-vote.yaml kuard:/tmp/test.yaml
+
+$kubectl exec kuard -- ls /tmp/
+
+$kubectl.exe cp kuard:/tmp/test.yaml .
+
+12.Health check(Create kuard-pod-health.yaml file for liveness)
+
+13.Run Pod
+
+$kubectl apply -f kuard-pod-health.yaml
+
+14.Port foward
+
+$kubectl port-forward kuard 8080:8080
+
+15.Resource request(Create kuard-pod-resreq.yaml file for request)
+
+#cpu:0.5 core, memory: 128MB
+
+16.Resource limit(Create kuard-pod-reslim.yaml file for limit)
