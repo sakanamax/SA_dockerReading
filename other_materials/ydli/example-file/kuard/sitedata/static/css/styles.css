@@ -1,0 +1,119 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.top {
+  height: 100%;
+  width: 100%;
+
+  /* flex parent props */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ccc;
+}
+
+.nav-container {
+  /* flex child props */
+  flex: 1;
+
+  /* flex parent props */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+}
+
+.nav {
+  /* flex parent props */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  background-color: #ccc;
+}
+
+.nav-item {
+  border-top: 1px solid #888;
+  padding: 1rem;
+  color:inherit;
+}
+
+.nav-item:last-child {
+  border-bottom: 1px solid #888;
+}
+
+a.nav-item:hover,
+a.nav-item:visited,
+a.nav-item:active,
+a.nav-item:link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.nav-item.active {
+  background-color: #333;
+  color: #ccc;
+}
+
+.content {
+  flex: 1;
+  overflow: scroll;
+
+  padding: 1rem;
+}
+
+.table {
+  width: auto;
+}
+
+form {
+  padding: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.icon-notification {
+  width: 2em;
+  height: 2em;
+  padding-right: 0.2em;
+}
+
+#disconnected {
+  color: white;
+  background-color: #ff9800;
+  position:fixed;
+  line-height: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+#disconnected .icon {
+  width: 75%;
+  height: 75%;
+}
+
+code {
+  background-color: #c4d5f2;
+  color: black;
+}
