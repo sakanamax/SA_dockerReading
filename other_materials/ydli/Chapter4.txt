@@ -75,25 +75,25 @@ $kubectl delete -f azure-vote.yaml
 
 1.Show pods label
 
-$kubectl  get pods --show-labels
+$kubectl get pods --show-labels
 
 2.Add pod label
 
-$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color=red
+$kubectl label pods azure-vote-back-798985f86b-hf8fl color=red
 
 3.Overwrite pod label
 
-$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color=blue --overwrite
+$kubectl label pods  azure-vote-back-798985f86b-hf8fl color=blue --overwrite
 
 4.Delete pod label
 
-$kubectl  label pods  azure-vote-back-798985f86b-hf8fl color-
+$kubectl label pods  azure-vote-back-798985f86b-hf8fl color-
 
 #Debugging Commands
 
 1.Show pod log
 
-$kubectl  logs azure-vote-back-798985f86b-hf8fl
+$kubectl logs azure-vote-back-798985f86b-hf8fl
 
 2.Login pod
 

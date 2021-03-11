@@ -1,11 +1,15 @@
 -------------------------------------
-2021/3/10
+2021/3/11
 
 Chapter5 study
 
 1.Use kubectl create pod
 
 $kubectl.exe run kuard --generator=run-pod/v1 --image=ydli/kuard:latest
+
+***--generator未來將會被移除***
+
+$kubectl.exe run kuard --image=ydli/kuard:latest
 
 $kubectl get pods
 
@@ -67,6 +71,18 @@ $kubectl port-forward kuard 8080:8080
 
 15.Resource request(Create kuard-pod-resreq.yaml file for request)
 
-#cpu:0.5 core, memory: 128MB
+***request cpu:0.5 core, memory: 128MB***
 
 16.Resource limit(Create kuard-pod-reslim.yaml file for limit)
+
+***request cpu:0.5 core, memory: 128MB ; limit cpu:1 core, memory: 256MB***
+
+17.Mount volume(Create kuard-pod-vol.yaml file for mount)
+
+$kubectl apply -f kuard-pod-vol.yaml
+
+18.Nfs(Create kuard-pod-vol.yaml file for nfs)
+
+19.Many resources pod manifest example(Create kuard-pod-full.yaml file)
+
+$kubectl apply -f kuard-pod-full.yaml

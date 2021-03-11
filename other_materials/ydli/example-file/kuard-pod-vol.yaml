@@ -3,13 +3,16 @@ kind: Pod
 metadata:
   name: kuard
 spec:
+  volumes:
+    - name: "kuard-data"
+      hostPath:
+        path: "/var/lib/kuard"
   containers:
     - image: ydli/kuard:latest
       name: kuard
-      resources:
-        requests:
-          cpu: "500m"
-          memory: "128Mi"
+      volumeMounts:
+        - mountPath: "/data"
+          name: "kuard-data"
       ports:
         - containerPort: 8080
           name: http

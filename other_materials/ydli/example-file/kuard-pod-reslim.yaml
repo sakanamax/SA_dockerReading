@@ -6,7 +6,7 @@ spec:
   containers:
     - image: ydli/kuard:latest
       name: kuard
-      resource:
+      resources:
         requests:
           cpu: "500m"
           memory: "128Mi"
