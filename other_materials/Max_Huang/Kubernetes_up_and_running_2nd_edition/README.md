@@ -3,6 +3,14 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/3/17
+
+* Chapter 5 P.57 ~ Chapter 5 結束
+* 下次 Chapter 6
+
+
+-------------------------------------
+
 2021/3/8
 
 * Chapter 5 P.53 ~ Chapter 5 P.57
