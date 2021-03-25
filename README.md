@@ -50,6 +50,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2021/3/25
+
+* Chapter 4 Debugging Commands ~ 
+
+* 講者 奕德 
+
+* 下次讀書會 4/8
+
+-------------------------------------------------
+
 2021/3/4
 
 * Chapter 4 ~ Chapter 4 Labeling and Annotating Objects
