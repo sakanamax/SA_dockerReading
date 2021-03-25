@@ -52,9 +52,9 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 2021/3/25
 
-* Chapter 4 Debugging Commands ~ 
+* Chapter 4 Debugging Commands ~ Chapter 4 結束
 
-* 講者 奕德 
+* 講者 奕德, 下次 Chapter 5
 
 * 下次讀書會 4/8
 
