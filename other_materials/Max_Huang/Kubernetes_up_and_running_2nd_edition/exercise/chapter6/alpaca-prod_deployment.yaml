@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpaca-prod
+  labels:
+    ver: "1"
+    app: alpaca
+    env: prod
+spec:
+  replicas: 2
+  # selector 爲必須
+  selector:
+    matchLabels:
+      ver: "1"
+      app: alpaca
+      env: prod
+  template:
+    # 這邊的 label 也要符合上面的設定
+    metadata:
+      labels:
+        ver: "1"
+        app: alpaca
+        env: prod
+    spec:
+      containers:
+        - name: kuard-amd64
+          image: gcr.io/kuar-demo/kuard-amd64:blue

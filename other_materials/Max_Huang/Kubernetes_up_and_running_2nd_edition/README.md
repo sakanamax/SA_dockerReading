@@ -3,6 +3,30 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/4/3
+
+* Chapter 6 ~ Chapter 6 P.66
+* kubernetes 1.18 以後 kubectl run 就只建立 pod, 如果要有 replicas 要使用 deployment 方式
+
+  * 參考官方 changelog https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.18.md#deprecation-4 "Remove all the generators from kubectl run. It will now only create pods. Additionally, deprecates all the flags that are not relevant anymore. "
+  * 書上的指令爲 > kubectl run alpaca-prod --image=gcr.io/kuar-demo/kuard-amd64:blue --replicas=2 --labels="ver=1,app=alpaca,env=prod"
+  * 會得到 Flag --replicas has been deprecated, has no effect and will be removed in the future. 的錯誤訊息
+* 解決方式
+
+  * 參考網路上找到的方式 https://qiita.com/iaoiui/items/77dccee2c8bada6b839f
+  * 先使用 kubectl create 建立 deployment ( kubectl run 1.17 以前是建立 deployment, 1.18 以後就是建立 pod 了 )
+
+    * > kubectl create deployment alpaca-prod --image gcr.io/kuar-demo/kuard-amd64:blue --replicas 2
+  * 因為 kubectl create deployment 不支援 --label 方式, 所以使用 kubectl label 指令來加上
+
+    * > kubectl label deployment alpaca-prod ver=1 app=alpaca env=prod
+    * 如果要加上多個 label, 就使用空白爲分隔, 分隔多個 label 的 key 與 value
+  * 這邊其實要注意, 因為剛剛是使用 kubectl label deployment 的方式, 所以其實目前的 pod 還是原來的 label 
+  * 所以比較穩妥的方式還是使用 yaml 檔來建立 deployment, 這樣比較不會有 deployment 與 pod label 不一致的問題
+* 下次 Chapter 6 P.66 修改 Label
+
+-------------------------------------
+
 2021/3/17
 
 * Chapter 5 P.57 ~ Chapter 5 結束

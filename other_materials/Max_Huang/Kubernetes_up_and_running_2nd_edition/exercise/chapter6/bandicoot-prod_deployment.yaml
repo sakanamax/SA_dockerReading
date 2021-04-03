@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bandicoot-prod
+  labels:
+    ver: "2"
+    app: bandicoot
+    env: prod
+spec:
+  replicas: 2
+  # selector 爲必須
+  selector:
+    matchLabels:
+      ver: "2"
+      app: bandicoot
+      env: prod
+  template:
+    # 這邊的 label 也要符合上面的設定
+    metadata:
+      labels:
+        ver: "2"
+        app: bandicoot
+        env: prod
+    spec:
+      containers:
+        - name: kuard-amd64
+          image: gcr.io/kuar-demo/kuard-amd64:green
