@@ -50,6 +50,16 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2021/4/8
+
+* Chapter 5 ~ 
+
+* 講者: 柏勳
+
+*  下次讀書會 4/29
+
+-------------------------------------------------
+
 2021/3/25
 
 * Chapter 4 Debugging Commands ~ Chapter 4 結束
