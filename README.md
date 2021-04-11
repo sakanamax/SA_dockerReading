@@ -52,9 +52,9 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 2021/4/8
 
-* Chapter 5 ~ 
+* Chapter 5 ~ Chapter 5 P.56
 
-* 講者: 柏勳
+* 講者: 柏勳, 下次講 Chapter P.57 於磁碟區持久化資料
 
 *  下次讀書會 4/29
 
