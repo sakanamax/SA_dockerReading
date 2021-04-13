@@ -3,14 +3,25 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/4/13
+
+* Chapter 6 P.67 ~ Chapter 6 結束
+
+* 下次 Chapter 7
+
+
+-------------------------------------
+
 2021/4/3
 
 * Chapter 6 ~ Chapter 6 P.66
+
 * kubernetes 1.18 以後 kubectl run 就只建立 pod, 如果要有 replicas 要使用 deployment 方式
 
   * 參考官方 changelog https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.18.md#deprecation-4 "Remove all the generators from kubectl run. It will now only create pods. Additionally, deprecates all the flags that are not relevant anymore. "
   * 書上的指令爲 > kubectl run alpaca-prod --image=gcr.io/kuar-demo/kuard-amd64:blue --replicas=2 --labels="ver=1,app=alpaca,env=prod"
   * 會得到 Flag --replicas has been deprecated, has no effect and will be removed in the future. 的錯誤訊息
+
 * 解決方式
 
   * 參考網路上找到的方式 https://qiita.com/iaoiui/items/77dccee2c8bada6b839f
