@@ -11,6 +11,9 @@ This is notes for Max reading
 
 * pod 改變 label 還是有一些要考慮的問題, 使用 kubectl label pod -l pod-template-hash=64ffddb7ff ver=1 app=alpaca env=prod --overwrite 這樣會多出很多 Pods 出來, 然後 label 會被吃掉一個, 詢問 CNTUG 社群中
 
+* 有詢問李端, 看起來目前好的解法是透過 --dry-run 與 -o 方式來產生 yaml 再來修改 
+> kubectl create deployment alpaca-prod --image=gcr.io/kuar-demo/kuard-amd64:blue --replicas=3 --port=8080 --dry-run=client -o yaml 
+
 * 下次 Chapter 7 P.74 (先用 Yaml 方式練習)
 
 -------------------------------------
