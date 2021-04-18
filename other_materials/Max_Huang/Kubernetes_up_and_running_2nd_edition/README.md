@@ -3,6 +3,18 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/4/18
+
+* Chapter 7 ~ Chapter P.73
+
+* 這一章的練習, 多了 container image port 的指定, 參考 https://kubernetes.io/docs/concepts/workloads/controllers/deployment/ 來設定
+
+* pod 改變 label 還是有一些要考慮的問題, 使用 kubectl label pod -l pod-template-hash=64ffddb7ff ver=1 app=alpaca env=prod --overwrite 這樣會多出很多 Pods 出來, 然後 label 會被吃掉一個, 詢問 CNTUG 社群中
+
+* 下次 Chapter 7 P.74 (先用 Yaml 方式練習)
+
+-------------------------------------
+
 2021/4/13
 
 * Chapter 6 P.67 ~ Chapter 6 結束
