@@ -56,7 +56,7 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 * 講者: 柏勳, 下次講 Chapter P.57 於磁碟區持久化資料
 
-*  下次讀書會 4/29
+*  下次讀書會 5/13
 
 -------------------------------------------------
 
