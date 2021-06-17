@@ -3,6 +3,12 @@ This is notes for Max reading
 
 -------------------------------------
 
+2021/6/18
+
+嘗試使用 Remote Repositories 編輯
+
+-------------------------------------
+
 2021/4/18
 
 * Chapter 7 ~ Chapter P.73
