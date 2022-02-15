@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: smokeping
+spec:
+  containers:
+  - image: linuxserver/smokeping
+    name: smokeping
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
