@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sakana
+spec:
+  containers:
+  - image: sakana/sshd
+    name: sakana
+    ports:
+    - containerPort: 22
+      name: http
+      protocol: TCP
