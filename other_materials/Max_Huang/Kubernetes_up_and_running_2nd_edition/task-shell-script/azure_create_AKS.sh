@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# edit by Max 2022/2/13
+# edit by Max 2022/2/15
 # 建立 Azure AKS
 
 echo ""
@@ -35,12 +35,14 @@ echo ""
 echo ""
 echo "設定 AKS 節點大小"
 echo "如果想知道該地區有那些 VM size, 以美東為例 可以使用 #az vm list-sizes --location eastus --output table "
+echo ""
 read -e -p "Please enter AKS Cluster node VM size: " -i "Standard_B2s" node_vm_size
 echo ""
 
 # 設定 AKS 節點數量
 echo ""
 echo "設定 AKS 節點數量"
+echo ""
 read -e -p "Please enter how many AKS node do you want to create?: " -i "1" node_count
 echo ""
 
