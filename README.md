@@ -50,6 +50,14 @@ http://freemind.sourceforge.net/wiki/index.php/Download
 
 -------------------------------------------------
 
+2022/3/10
+
+* Chapter 5 結束
+
+* 講者: 柏勳, 下次講 Chapter 6
+
+-------------------------------------------------
+
 2021/4/8
 
 * Chapter 5 ~ Chapter 5 P.56
