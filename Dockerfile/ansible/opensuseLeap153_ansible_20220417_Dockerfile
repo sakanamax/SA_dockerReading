@@ -1,0 +1,82 @@
+# openSUSE Leap 15.3 with ansible, azure-cli, aws cli, gcloud
+FROM opensuse/leap:15.3
+
+# Author
+# MAINTAINER 已經棄用, 之後要使用 LABEL 方式
+# update time: 20220417
+LABEL maintainer="sakana@cycu.org.tw"
+
+# Set LANG for UTF-8 - for Chinese
+ENV LANG C.UTF-8
+
+# Install python3-pip, upgrade pip, ansible, boto, boto3
+RUN zypper refresh && \
+  zypper install -y python3-pip && \
+  pip3 install --upgrade pip && \
+  pip3 install ansible && \
+  pip3 install boto boto3
+
+# Install openssh, set ls alias
+RUN zypper install -y openssh
+RUN echo "alias ls='ls --color=tty'" >> /root/.bashrc
+
+# Install wget, download azure_rm.py, set permission
+RUN zypper install -y wget
+
+# azure_rm.py no need to download 
+# Starting with Ansible 2.8, Ansible provides an Azure dynamic-inventory plug-in
+# https://docs.ansible.com/ansible/latest/plugins/inventory/azure_rm.html
+# old azure_rm.py URL https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/azure_rm.py
+# 
+
+# Create working directory in /root
+RUN mkdir /root/.azure && \
+  mkdir /root/.aws && \
+  mkdir /root/playbook && \
+  mkdir -p /root/.config/gcloud && \
+  wget https://raw.githubusercontent.com/sakanamax/LearnAnsible/master/template/ansible.cfg && \
+  mv /ansible.cfg /root && \
+  wget https://raw.githubusercontent.com/sakanamax/LearnAnsible/master/template/hosts && \
+  mv /hosts /root
+
+#### Azure #### 
+# Install azure-cli
+# 2020/11/29 Still have az login issue in Github https://github.com/Azure/azure-cli/issues/13209
+RUN zypper install -y curl && \
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
+  zypper addrepo --name 'Azure CLI' --check https://packages.microsoft.com/yumrepos/azure-cli azure-cli && \
+  zypper install --from azure-cli -y azure-cli
+
+# Install Ansible azure module
+# After ansible 2.10, some module move to ansible collect, change install method
+RUN zypper install -y curl && \ 
+  curl -O https://raw.githubusercontent.com/ansible-collections/azure/dev/requirements-azure.txt && \
+  pip3 install -r requirements-azure.txt && \
+  rm -f requirements-azure.txt && \
+  ansible-galaxy collection install azure.azcollection
+
+
+
+#install vim tar gzip jq unzip less bind-utils iputils groff
+RUN zypper install -y vim tar gzip jq unzip less bind-utils iputils groff
+RUN echo "set encoding=utf8" > /root/.vimrc
+
+#### AWS ####
+# Install awscli v1
+#RUN pip3 install awscli
+#RUN echo "source /usr/bin/aws_bash_completer" >> /root/.bashrc
+
+# Install awscli v2
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+  unzip awscliv2.zip && \
+  /aws/install
+RUN echo "complete -C '/usr/local/bin/aws_completer' aws" >> /root/.bashrc
+
+#### GCP ####
+# Install google cloud SDK 381.0.0
+ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
+RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-381.0.0-linux-x86_64.tar.gz && \
+  tar zxvf google-cloud-sdk-381.0.0-linux-x86_64.tar.gz && \
+  /google-cloud-sdk/install.sh && \
+  echo "if [ -f '/google-cloud-sdk/path.bash.inc' ]; then . '/google-cloud-sdk/path.bash.inc'; fi" >> /root/.bashrc && \
+  echo "if [ -f '/google-cloud-sdk/completion.bash.inc' ]; then . '/google-cloud-sdk/completion.bash.inc'; fi" >> /root/.bashrc
