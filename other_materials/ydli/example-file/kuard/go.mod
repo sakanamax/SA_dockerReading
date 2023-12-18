@@ -13,5 +13,5 @@ require (
 	github.com/prometheus/client_golang v1.11.1
 	github.com/spf13/pflag v1.0.3
 	github.com/spf13/viper v1.3.2
-	golang.org/x/crypto v0.1.0
+	golang.org/x/crypto v0.17.0
 )
